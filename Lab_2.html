@@ -7628,8 +7628,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="sweep of roll values" src="Media%5CRoll_Sweep.PNG"/>
-<img alt="sweep of pitch values" src="Media%5CPitch_Sweep.jpg"/></p>
+<p><img alt="sweep of roll values" src="Media\Roll_Sweep.PNG"/>
+<img alt="sweep of pitch values" src="Media\Pitch_Sweep.jpg"/></p>
 </div>
 </div>
 </div>
@@ -7642,9 +7642,9 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>To improve the accuracy of my accelerometer I explored using 2 point calibration. However, in my measurements of two points, I found them to be close enough to -90 and 90 that I chose not to. Considering I was using a cardboard box as my means of measuring these angles I reasoned that considering the relative inaccuracy of the method, 2 point calibration would not yield a meaningful increase in accuracy and therefore was not a beneficial exercise.<br/>
 Pitch:<br/>
-<img alt="pitch" src="Media%5C2_point_pitch.jpg"/>
+<img alt="pitch" src="Media\2_point_pitch.jpg"/>
 Roll:<br/>
-<img alt="roll" src="Media%5C2_point_roll.jpg"/></p>
+<img alt="roll" src="Media\2_point_roll.jpg"/></p>
 </div>
 </div>
 </div>
@@ -7656,8 +7656,8 @@ Roll:<br/>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>When holding the accelerometer in close proximity with the spinning motors of the car, the data didn’t appear to be very noisy.
-<img alt="roll data near motors" src="Media%5Croll_data_near_motor.jpg"/>
-<img alt="pitch data near motors" src="Media%5Cpitch_data_near_motor.jpg"/>
+<img alt="roll data near motors" src="Media\roll_data_near_motor.jpg"/>
+<img alt="pitch data near motors" src="Media\pitch_data_near_motor.jpg"/>
 Although the data looks fairly noisy on the plot, the relative amplitude of the noise is pretty low, only drifting a few degrees from center in each direction.</p>
 </div>
 </div>
@@ -7671,9 +7671,9 @@ Although the data looks fairly noisy on the plot, the relative amplitude of the 
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>A fourier analysis was performed on the pitch and roll data yielding the following results:
 Roll:<br/>
-<img alt="roll fourier analysis" src="Media%5Croll_fourier.jpg"/>
+<img alt="roll fourier analysis" src="Media\roll_fourier.jpg"/>
 Pitch:
-<img alt="pitch fourier analysis" src="Media%5Cpitch_fourier.jpg"/>
+<img alt="pitch fourier analysis" src="Media\pitch_fourier.jpg"/>
 It can be observed that in both plots, most of the frequency composition is around the fundamental with a small peak around 15Hz on the roll plot. From this data, I reasoned that a good cutoff frequency would be 2Hz.</p>
 <div class="highlight"><pre><span></span><span class="n">time</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">time_data</span><span class="p">)</span> <span class="o">/</span> <span class="mf">1000.0</span>
 <span class="n">sample_intervals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
@@ -7685,9 +7685,9 @@ It can be observed that in both plots, most of the frequency composition is arou
 </pre></div>
 <p>The above code was used to compute the alpha value considering the data, sampling rate and desired cutoff frequency. It yielded a value of 0.038. The equation used to calculate alpha is an adaptation of that of an RC low pass filter which we covered in lecture. In practice, the choice of alpha values informs how well your filtered data tracks the measured data. The benefit is that with the appropriately chosen value, it will mitigate the influence of noise on the output. However if the alpha value gets too small, meaning your cutoff frequency is very low, you risk filtering out the meaningful components of the data.</p>
 <p>Roll:<br/>
-<img alt="filtered roll fourier analysis" src="Media%5Cfiltered_roll_fourier.jpg"/>
+<img alt="filtered roll fourier analysis" src="Media\filtered_roll_fourier.jpg"/>
 Pitch:
-<img alt="filtered pitch fourier analysis" src="Media%5Cfiltered_pitch_fourier.jpg"/></p>
+<img alt="filtered pitch fourier analysis" src="Media\filtered_pitch_fourier.jpg"/></p>
 <p>Above are the plots of the fourier analysis of the same pitch and roll data after it has been filtered. It can be observed that frequencies above the fundamental are being attenuated.</p>
 </div>
 </div>
@@ -7701,9 +7701,9 @@ Pitch:
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>When introducing vibrational noise by gently hitting the table it yields the following fourier analyses.<br/>
 Roll:<br/>
-<img alt="roll fourier analysis" src="Media%5Chitting_roll.jpg"/>
+<img alt="roll fourier analysis" src="Media\hitting_roll.jpg"/>
 Pitch:
-<img alt="pitch fourier analysis" src="Media%5Chitting_pitch.jpg"/></p>
+<img alt="pitch fourier analysis" src="Media\hitting_pitch.jpg"/></p>
 </div>
 </div>
 </div>
@@ -7715,8 +7715,8 @@ Pitch:
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Below are examples of how the low pass filter approach works in practice. We can observe how the filtered data follows general the trend of the unfiltered data.
-<img alt="filtered vs unfiltered roll" src="Media%5Cfiltered_unfiltered_roll.jpg"/>
-<img alt="filtered vs unfiltered pitch" src="Media%5Cfiltered_unfiltered_pitch.jpg"/></p>
+<img alt="filtered vs unfiltered roll" src="Media\filtered_unfiltered_roll.jpg"/>
+<img alt="filtered vs unfiltered pitch" src="Media\filtered_unfiltered_pitch.jpg"/></p>
 </div>
 </div>
 </div>
@@ -7753,15 +7753,15 @@ Pitch:
  <span class="n">roll_gyro</span><span class="p">[</span><span class="n">counter</span><span class="p">]</span> <span class="o">=</span> <span class="n">roll_g</span><span class="p">;</span>
  <span class="n">yaw_gyro</span><span class="p">[</span><span class="n">counter</span><span class="p">]</span> <span class="o">=</span> <span class="n">yaw_g</span><span class="p">;</span>
 </pre></div>
-<p><img alt="LPF vs gyro roll" src="Media%5CLPF_gyro_roll.jpg"/>
-<img alt="LPF vs gyro pitch" src="Media%5CLPF_gyro_pitch.jpg"/></p>
+<p><img alt="LPF vs gyro roll" src="Media\LPF_gyro_roll.jpg"/>
+<img alt="LPF vs gyro pitch" src="Media\LPF_gyro_pitch.jpg"/></p>
 <p>As we can observe in these plots, generally speaking, the gyro data and the filtered data follow very similar trends. This is a strong indication that we chose an appropriate cutoff frequency because gyro data is far less susceptible to noise than the accelerometer. However, We also see that the value at which the gyro and filtered accelerometer data settle on on the right of our graphs are different. This is a consequence of the gyro's susceptibility to drift. The values are supposed to be 90 degrees for roll and -90 degrees for pitch but in both cases the magnitude of the gyro data is observably larger. Because the the discrete integration approach used to gyro angle calculations, if we were to decrease the sampling rate, it only exacerbates the drift issues. As we can see below, in a relatively short time window one rapid rotation introduces a significant amount of drift in the gyro angle calculation when a 50 millisecond delay is included.</p>
-<p><img alt="gyro drift" src="Media%5Cgyro_drift.jpg"/></p>
+<p><img alt="gyro drift" src="Media\gyro_drift.jpg"/></p>
 <p>A method to capitalize on the minimal gyro noise and lack of accelerometer drift is a complementary filter approach. Using the formula outlined in the lecture slides I was able to implement a complementary filter that capitalizes on the best elements of both approaches.</p>
 <div class="highlight"><pre><span></span><span class="n">comp_pitch</span><span class="p">[</span><span class="n">counter</span><span class="p">]</span> <span class="o">=</span> <span class="p">((</span><span class="n">comp_pitch</span><span class="p">[</span><span class="n">counter</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">myICM</span><span class="o">.</span><span class="n">gyrY</span><span class="p">()</span><span class="o">*</span><span class="n">dt</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">alpha</span><span class="p">))</span> <span class="o">+</span> <span class="p">(</span><span class="n">pitch_accel</span><span class="p">[</span><span class="n">counter</span><span class="p">]</span> <span class="o">*</span> <span class="n">alpha</span><span class="p">);</span>
  <span class="n">comp_roll</span><span class="p">[</span><span class="n">counter</span><span class="p">]</span> <span class="o">=</span> <span class="p">((</span><span class="n">comp_roll</span><span class="p">[</span><span class="n">counter</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">myICM</span><span class="o">.</span><span class="n">gyrX</span><span class="p">()</span><span class="o">*</span><span class="n">dt</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">alpha</span><span class="p">))</span> <span class="o">+</span> <span class="p">(</span><span class="n">roll_accel</span><span class="p">[</span><span class="n">counter</span><span class="p">]</span> <span class="o">*</span> <span class="n">alpha</span><span class="p">);</span>
 </pre></div>
-<p><img alt="complimentary filter" src="Media%5Ccomp_filter.jpg"/>
+<p><img alt="complimentary filter" src="Media\comp_filter.jpg"/>
 This plot demonstrates the benefits of the complementary filter approach. The output closely tracks the signal without being influenced by the quick vibrations associated with rotation. Furthermore, we can observe drift in the gyro data on the right of our graph; however, the complementary filter does not experience that drift and is able to return to 0. The output behavior is strongly influenced by the choice of alpha value which in this case I found experimentally.</p>
 </div>
 </div>

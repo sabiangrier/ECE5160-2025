@@ -7666,7 +7666,7 @@ The ECHO command sends a string via Bluetooth to our Artemis board. The Artemis 
     <span class="k">break</span><span class="p">;</span>
 </pre></div>
 <p>Python Output:
-<img alt="echo python output" src="Media%5CECHO_py.PNG"/></p>
+<img alt="echo python output" src="Media\ECHO_py.PNG"/></p>
 </div>
 </div>
 </div>
@@ -7710,7 +7710,7 @@ The SEND_THREE_FLOATS command sends 3 floats to the Artemis. The board then extr
     <span class="k">break</span><span class="p">;</span>
 </pre></div>
 <p>Serial Output:
-<img alt="send three floats serial output" src="Media%5CSEND_THREE_FLOATS.PNG"/></p>
+<img alt="send three floats serial output" src="Media\SEND_THREE_FLOATS.PNG"/></p>
 </div>
 </div>
 </div>
@@ -7739,7 +7739,7 @@ The GET_TIME_MILLIS command prompts the Artemis to get its current time in milli
     <span class="k">break</span><span class="p">;</span>
 </pre></div>
 <p>Python Output:
-<img alt="get time millis python output" src="Media%5CGET_TIME_MILLIS.PNG"/></p>
+<img alt="get time millis python output" src="Media\GET_TIME_MILLIS.PNG"/></p>
 </div>
 </div>
 </div>
@@ -7793,7 +7793,7 @@ To construct a loop that gets time in milliseconds to be sent to and processed b
     <span class="k">break</span><span class="p">;</span>
 </pre></div>
 <p>Serial Output:
-<img alt="get data rate serial output" src="Media%5CGET_DATA_RATE.PNG"/></p>
+<img alt="get data rate serial output" src="Media\GET_DATA_RATE.PNG"/></p>
 <p>In the 5 second transmission window it is able to transmit 151 time stamps. Considering that each time stamp is a 9 byte string, this means a data transmission rate of 271.8 Bytes/s</p>
 </div>
 </div>
@@ -7831,7 +7831,7 @@ Rather than collecting and transmitting time data individually, SEND_TIME_DATA p
     <span class="k">break</span><span class="p">;</span>
 </pre></div>
 <p>Python Output:
-<img alt="send time data python output" src="Media%5CSEND_TIME_DATA.PNG"/></p>
+<img alt="send time data python output" src="Media\SEND_TIME_DATA.PNG"/></p>
 <p>Upon completion of data transmission printing the length of the array, time_data, will return a value of 500 which is to be expected. When comparing the values with those displayed in the serial monitor they are the same.</p>
 </div>
 </div>
@@ -7878,7 +7878,7 @@ GET_TEMP_READINGS works similarly to SEND_TIME_DATA. It includes an additional a
     <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">end_time</span><span class="o">-</span><span class="n">start_time</span><span class="p">);</span>
 </pre></div>
 <p>Python Output:
-<img alt="get temp readings python output" src="Media%5CGET_TEMP_READINGS.PNG"/>
+<img alt="get temp readings python output" src="Media\GET_TEMP_READINGS.PNG"/>
 Upon completion of data transmission, printing the length of the two arrays, time_data and temp_data, will return a value of 500 which is to be expected considering that maxTimeStamps = 500. Addtionally, when comparing the time and temperature values with those printed to the serial monitor they do match.</p>
 </div>
 </div>
@@ -7936,7 +7936,7 @@ The first method allows for seemingly real-time data transfer. The key limitatio
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"Packet Size (bytes)"</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"Data Rate (bytes/sec)"</span><span class="p">)</span>
 </pre></div>
-<p><img alt="data rate graph" src="Media%5CData_Rate_Plot.PNG"/>
+<p><img alt="data rate graph" src="Media\Data_Rate_Plot.PNG"/>
 Larger sized packets reduce overhead becuase as we can see in the plot, as packet size grows, data rate increases.</p>
 </div>
 </div>
