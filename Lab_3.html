@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Lab_4</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Lab_3</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7510,7 +7510,7 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c11e76f5-ad17-46f5-b7b5-16411a234150">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b36d83b5-d979-47c3-8c1a-2e108c3ae1ed">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7521,40 +7521,29 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4f4696b7-7873-4f3e-b0f8-d5ac1acb5d18">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f0f5e9e1-78a2-4be0-9170-fffd3f8a8a14">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lab-4">Lab 4<a class="anchor-link" href="#Lab-4">¶</a></h1>
+<h1 id="Lab-2">Lab 2<a class="anchor-link" href="#Lab-2">¶</a></h1>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=417bb6c5-5259-4c45-98a2-89fdcf7b9dc2">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=04227422-f9c3-4a74-b8f1-be0a3b55c0c5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Objective">Objective<a class="anchor-link" href="#Objective">¶</a></h2>
+<p>In the Lab 3 we are tasked with integrating distance sensors with our artemis microcontroller.</p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=82a1b685-3f2c-4b72-a787-5c99c832602c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>In lab 4, we were tasked with transitioning our car from manual to open-loop control. We were responsible for integrating our Artemis, motor driver, and sensors into the vehicle and having it perform simple movements.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c4cd7773-7a5a-4db6-aa7f-a3a4cd05a9a5">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=abe584d3-820f-4a4d-942b-1641d45e000b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7565,393 +7554,333 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f0366507-664b-415d-8061-05a3e37a17f0">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e85e8006-7554-4c85-bf1b-e65bbdf386b4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The prelab began with referring to the dual motor driver documentation and datasheet. We parallel-coupled the dual motor driver such that instead of driving two motors, it could supply double the current to a single motor. I used pins A14 and A15 for one motor driver, and for the other, I used A2 and A3. I selected these pins because they were PWM compatible, and they optimized the wire routing for my car configuration. Separate batteries are used to power the Artemis and motor drivers/motors mitigate the EM noise on microcontroller signals and connections and maximize current supply.</p>
+<img alt="address" src="Media\89099.jpg" width="500"/>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7449dfab-2523-4b86-a4df-9e9a8833f9c3">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=70df4e7f-447d-4758-a4ca-7f38984f3537">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="motor driver wiring diagarm" src="Media%5Cmotor_diagram.jpg"/></p>
+<p>In our lab kit, we are provided with VL53L1X Time-of-Flight (ToF) sensors. When strategically mounted on our car, we will use these to acquire meaningful distance data. To begin, I referred to the datasheet. When initialized, both accelerometers have the same I2C address, and in this lab, we are responsible for handling the addressing such that they are both readable. I have yet to commit to ToF placement on my vehicle, so I opted to use the two long QWIIC connect cables to give me more freedom when installing them in my car. Approaches I am entertaining place both in the front, or one in the front, and one on the side. Depending on the configuration, it will miss obstacles behind and on the left and/or right. Considering that the car moves through space either forward or backward, and backward movement can be replaced with a 180-degree turn, the particular locations of the blindspots can be accounted for in the code.</p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f38c84cf-8712-487f-9b43-dff79cb332b3">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ac9f80fc-a80d-4f65-b576-477c64a38bc9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="PWM">PWM<a class="anchor-link" href="#PWM">¶</a></h2>
+<h2 id="Soldering">Soldering<a class="anchor-link" href="#Soldering">¶</a></h2>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=24f02cd7-47a8-4465-b28a-243188282d00">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d773ade4-ffcf-48d2-9bd5-5f37e119d589">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We verified the PWM waveform integrity using the oscilloscope before connecting the motor drivers to the motors and battery. The analog write function takes in duty cycle as a value in range 0 - 255. I drove one signal line with a 50% duty cycle square wave to verify functionality while the other signal line was pulled low. Because the motors are responsible for spinning in both directions, I tried the inverse case, flipping the pin pulled low with the pin receiving the PWM. The VIN and GND pins on the output side were connected to an external power supply set to 3.7V, which was recommended to me in office hours. The motor driver input voltage range is 2.7V to 10.8V provided on the datasheet. The scope probes were placed on OUT1 and OUT2. Once I verified that the PWM was working as expected, I performed the same test on the other motor driver. The following code was used to generate PWM signals:</p>
+<p>We begin by attaching a JST connector to one of our 650mAh batteries to power our microcontroller from the batteries. To ensure a successful JST connection and battery function, I sent BLE messages back and forth between my computer and the Artemis to validate the untethered connection. I used the ECHO command for this task.</p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3ec18030-b78f-4497-a0a5-f9712edf684a">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5b597249-f5d2-49ce-be64-12a1bb20eb3d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span><span class="n">const</span> <span class="nb">int</span> <span class="n">AIN1</span> <span class="o">=</span> <span class="mi">14</span><span class="p">;</span>      <span class="o">//</span> <span class="n">Motor</span> <span class="n">direction</span> <span class="n">control</span> <span class="n">pin</span> <span class="mi">1</span>
-<span class="n">const</span> <span class="nb">int</span> <span class="n">AIN2</span> <span class="o">=</span> <span class="mi">15</span><span class="p">;</span>      <span class="o">//</span> <span class="n">Motor</span> <span class="n">direction</span> <span class="n">control</span> <span class="n">pin</span> <span class="mi">2</span>
+<h2 id="I2C">I2C<a class="anchor-link" href="#I2C">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c97eac19-3886-4536-a44f-361f477165da">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>After soldering the ToF to the QWIIC connect, we connect to the I2C breakout board and use Example1_wire_I2C to find the sensor.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b78666b7-f0a8-4134-aa6f-1e985df0f895">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="address" src="Media\addr.png" width="500"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9360a57f-1142-4f58-829b-e105ad717509">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The sensor has an address of 0x29. Although the datasheet states that default I2C address is 0x52, the address returned by the scan is likely the most significant seven bits ignoring the read/write bit.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0b3eeae5-c2bd-47ba-b8f3-169f06adcce0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="ToF-Testing">ToF Testing<a class="anchor-link" href="#ToF-Testing">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d8233921-a2e3-4f1d-8309-ea92398de9f8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>After finding the sensor, I began data collection. The sensor has three modes: short, medium, and long. The data sheet and experimental testing show that short is more accurate but has less range. The datasheet also indicates that the short setting is more resistant to ambient lighting conditions and has shorter ranging time. Due to these factors, it felt like a more reasonable choice because the robot would operate in various settings.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7340158b-e83b-4e65-bc5a-bf135bb8621c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="mean plt" src="Media\IMG_0901.jpg" width="300"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c2f1ad39-d9d6-4222-88a4-4e561485826c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>To understand the ToF in its short setting, I collected data comparing the measured and actual values. Furthermore, I used two different surfaces at each distance increment, a white glossy surface, and a matte black surface, to collect data on any potential discrepancy introduced by color and texture. I created a Bluetooth command that collects 50 ToF measurements and transmits them to my computer for processing in Jupyter lab.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9cdf74e9-a619-4926-b900-b7e77c77d762">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="mean plt" src="Media\mean.png" width="500"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5319ede5-9ccb-4139-a453-52c809d63e81">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="standard deviation plot" src="Media\std.png" width="500"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=05535188-b24f-4d32-ab50-7efd8622dc53">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Both setups display linear behavior and maintain decent accuracy up to about 500 mm. However for the matte black backdrop, the linear trend does not follow the measured values beyond the initial measurement despite having a low standard deviation. Beyond 600 mm, even the white glossy surface measurements begin to diverge from the actual values, accompanied by an increase in standard deviation. As the distance increases past 600 mm, the sensor’s accuracy decreases and variability rises significantly. Under the tested environmental conditions, reliable, meaningful data is generally confined to distances under 500 mm. Across all these measurements, there was an average ranging time of 51.56 ms.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5326872d-8802-487e-b19c-75a6baa6af90">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Dual-ToF">Dual ToF<a class="anchor-link" href="#Dual-ToF">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=78dbec30-6fcd-41b5-8181-a8e9ec34044c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>To resolve potential conflicts when connecting both sensors to the I2C breakout, I manage their addressing by controlling the XSHUT pin. The XSHUT of one of the sensors is connected to pin 4 on my microcontroller. Addressing is handled using the following steps.</p>
+<ol>
+<li>Set the XSHUT pin low to keep sensor 2 powered off initially.</li>
+<li>Configure sensor 1 with a new I2C address.</li>
+<li>Enable sensor 2, allowing it to initialize with the default address.</li>
+</ol>
+<p>This approach ensures that both sensors can communicate independently without addressing conflicts.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7b0cf973-957a-462e-ae94-5155eeac8c04">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Once the sensors are successfully initialized, the following code prints Artemis clock to Serial as fast as possible and prints new sensor data whenever it is available.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bfa8bc34-6798-4813-8f39-6b23159a328e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">void</span> <span class="n">setup</span><span class="p">(</span><span class="n">void</span><span class="p">)</span>
+<span class="p">{</span>
+ <span class="n">pinMode</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+ <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span> <span class="o">//</span> <span class="n">Keep</span> <span class="n">sensor2</span> <span class="ow">in</span> <span class="n">shutdown</span>
 
 
-<span class="n">void</span> <span class="n">setup</span><span class="p">()</span> <span class="p">{</span>
- <span class="n">pinMode</span><span class="p">(</span><span class="n">AIN1</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
- <span class="n">pinMode</span><span class="p">(</span><span class="n">AIN2</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+ <span class="n">sensor1</span><span class="o">.</span><span class="n">setI2CAddress</span><span class="p">(</span><span class="mh">0x30</span><span class="p">);</span> <span class="o">//</span> <span class="n">setAddress</span> <span class="n">returns</span> <span class="mi">0</span> <span class="n">on</span> <span class="n">success</span>
+ <span class="k">while</span> <span class="p">(</span><span class="n">sensor1</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">//</span> <span class="n">begin</span><span class="p">()</span> <span class="n">returns</span> <span class="mi">0</span> <span class="n">on</span> <span class="n">a</span> <span class="n">successful</span> <span class="n">init</span>
+ <span class="p">{</span>
+   <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"Sensor1 failed to begin."</span><span class="p">);</span>
+ <span class="p">}</span>
+ <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"Sensor1 online at address 0x30"</span><span class="p">);</span>
 
- <span class="n">digitalWrite</span><span class="p">(</span><span class="n">AIN2</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+ <span class="k">while</span> <span class="p">(</span><span class="n">sensor2</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span>
+ <span class="p">{</span>
+   <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"Sensor2 failed to begin"</span><span class="p">);</span>
+ <span class="p">}</span>
+ <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"Sensor2 online at default address 0x29"</span><span class="p">);</span>
 
- <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN1</span><span class="p">,</span> <span class="mi">128</span><span class="p">);</span>
+
+ <span class="n">sensor1</span><span class="o">.</span><span class="n">setDistanceModeShort</span><span class="p">();</span>
+ <span class="n">sensor2</span><span class="o">.</span><span class="n">setDistanceModeShort</span><span class="p">();</span>
 <span class="p">}</span>
 
 
-<span class="n">void</span> <span class="n">loop</span><span class="p">()</span> <span class="p">{</span>
+<span class="n">void</span> <span class="n">loop</span><span class="p">(</span><span class="n">void</span><span class="p">)</span>
+<span class="p">{</span>
+ <span class="n">sensor1</span><span class="o">.</span><span class="n">startRanging</span><span class="p">();</span>
+ <span class="n">sensor2</span><span class="o">.</span><span class="n">startRanging</span><span class="p">();</span>
+ <span class="k">if</span> <span class="p">(</span><span class="n">sensor1</span><span class="o">.</span><span class="n">checkForDataReady</span><span class="p">())</span> <span class="p">{</span>
+   <span class="nb">int</span> <span class="n">distance1</span> <span class="o">=</span> <span class="n">sensor1</span><span class="o">.</span><span class="n">getDistance</span><span class="p">();</span>
+   <span class="n">sensor1</span><span class="o">.</span><span class="n">clearInterrupt</span><span class="p">();</span>
+   <span class="n">sensor1</span><span class="o">.</span><span class="n">stopRanging</span><span class="p">();</span>
+   <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">distance1</span><span class="p">);</span>
+ <span class="p">}</span>
+ <span class="k">if</span><span class="p">(</span><span class="n">sensor2</span><span class="o">.</span><span class="n">checkForDataReady</span><span class="p">())</span> <span class="p">{</span>
+   <span class="nb">int</span> <span class="n">distance2</span> <span class="o">=</span> <span class="n">sensor2</span><span class="o">.</span><span class="n">getDistance</span><span class="p">();</span>
+   <span class="n">sensor2</span><span class="o">.</span><span class="n">clearInterrupt</span><span class="p">();</span>
+   <span class="n">sensor2</span><span class="o">.</span><span class="n">stopRanging</span><span class="p">();</span>
+   <span class="n">Serial</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">distance2</span><span class="p">);</span>
+ <span class="p">}</span>
+ <span class="k">else</span><span class="p">{</span>
+   <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">millis</span><span class="p">());</span>
+ <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5913a3c0-d779-4cf3-afa8-22ec0aa0df99">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dfb678af-4f1f-49b7-a0d3-a822232c958e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Power Supply:</strong></p>
+<img alt="speed test output" src="Media\speed.png" width="500"/>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=217d85c2-988b-4ae9-b4c4-fcb3d19c06bb">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=43cbdddc-24a0-4ea6-b658-271a65ae6876">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<img alt="Power Supply" src="Media\PSU.jpg" width="500"/>
+<p>On average, assuming no data is available, it takes the loop about 7ms to execute. The limiting factor is the rate at which the data is available from the ToF. From the observed serial output it’s clear that the loop is executing much faster than the ToF is able to sample new data.</p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8a05ba9f-294f-4cde-90d8-c239f5ea2975">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5f9f0cb4-e00e-4174-88f7-9a813af879e4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Motor Driver 1 Oscilloscope Output:</strong></p>
+<h2 id="IMU-Integration">IMU Integration<a class="anchor-link" href="#IMU-Integration">¶</a></h2>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=513619a6-6767-4a21-9d2b-e0d0dd0ee825">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b1e74fc3-0640-47fb-bcad-69e4ba2fc1cc">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<img alt="oscilloscope 1" src="Media\o_scope_2.jpg" width="500"/>
+<p>To combine elements of Lab 2 with our work in Lab 3, we were responsible for collecting both time-stamped ToF and IMU data and transmitting it via Bluetooth. Because the IMU uses a different default address, there were no additional address considerations when attaching it to the I2C breakout. By including IMU setup, we can collect IMU data in conjunction with ToF data and transmit it over Bluetooth using the IMU method in Lab 2. This data collection yielded the following plots:</p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=56adff75-48d7-4753-b4be-af316b78fcbd">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ad1ab3b6-baf9-4673-b0c5-50a8d062865e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Motor Driver 2 Oscilloscope Output:</strong></p>
+<img alt="time vs angle plot" src="Media\time_v_angle.png" width="500"/>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=acbaad3d-f67c-4603-afcd-badda192a8b3">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=50c3385a-2cb6-491e-a06b-807a8a750cc0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<img alt="oscilloscope 2" src="Media\o_scope_1.jpg" width="500"/>
+<img alt="time vs distance plot" src="Media\time_v_distance.png" width="500"/>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c7190bc5-d2df-4f14-926b-c14ec5f5bd24">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Since we had already verified the motor driver output signal, the next step was to connect the motors to the drivers. Running the same code with the car connected to the power supply yielded the following results:</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=547b9866-942f-4c38-aeb4-a056a6500ba0">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://youtube.com/shorts/dL0KM5r9p3c"><img alt="Watch the video" src="https://img.youtube.com/vi/dL0KM5r9p3c/0.jpg"/></a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ab78db18-de3b-43e4-82ef-09f7633af13c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://youtube.com/shorts/VMYzvL86GpU"><img alt="Watch the video" src="https://img.youtube.com/vi/VMYzvL86GpU/0.jpg"/></a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=24d2111d-4494-4af7-9292-a276fe981059">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>I then ran a modified version of the program which allowed me to once again verify the multi-directional motion, as demonstrated in this video:</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1c4e5364-b401-4026-9426-c041c5750fff">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://youtube.com/shorts/e1mnxk6gKpo"><img alt="Watch the video" src="https://img.youtube.com/vi/e1mnxk6gKpo/0.jpg"/></a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9ebfe167-6847-4a0a-ba01-d4783f687a4c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Open-Loop">Open Loop<a class="anchor-link" href="#Open-Loop">¶</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a4091f56-f225-4c39-9229-c87363892f73">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Following the bench test, I finished assembling my car to begin open loop and untethered testing.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=119a47f1-c16e-47df-a848-a134c86def23">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<img alt="car configuration" src="Media\car_config.jpg" width="500"/>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ebcf8318-9153-4ac8-8e34-b7725686ea0e">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>For this step I created two new bluetooth commands, SPIN_MOTOR and SPIN_MOTOR_1. The first command allowed for the direction and duty cycle to be set on each motor. I opted for this approach because it allowed me to calibrate the motors and perform lower limit tests without having to flash new code. The second command allows me to set an initial PWM value and after some time switch to another PWM value. It takes in 4 inputs, initial and secondary PWM value for each motor. The second command was created to assist with the 5000 level additional exercise.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9383a22e-0005-41a5-b85a-4b02bcc9ed9e">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span><span class="k">case</span> <span class="n">SPIN_MOTOR</span><span class="p">:</span>
-           <span class="nb">int</span> <span class="n">direction1</span><span class="p">,</span> <span class="n">dutyCycle1</span><span class="p">,</span> <span class="n">direction2</span><span class="p">,</span> <span class="n">dutyCycle2</span><span class="p">;</span>
-
-           <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">direction1</span><span class="p">);</span>
-           <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
-
-           <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">dutyCycle1</span><span class="p">);</span>
-           <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
-
-           <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">direction2</span><span class="p">);</span>
-           <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
-
-           <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">dutyCycle2</span><span class="p">);</span>
-           <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
-
-           <span class="n">dutyCycle1</span> <span class="o">=</span> <span class="n">constrain</span><span class="p">(</span><span class="n">dutyCycle1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
-           <span class="n">dutyCycle2</span> <span class="o">=</span> <span class="n">constrain</span><span class="p">(</span><span class="n">dutyCycle2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
-
-
-           <span class="k">if</span> <span class="p">(</span><span class="n">direction1</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-               <span class="n">digitalWrite</span><span class="p">(</span><span class="n">AIN2</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-               <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN1</span><span class="p">,</span> <span class="n">dutyCycle1</span><span class="p">);</span>
-           <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-               <span class="n">digitalWrite</span><span class="p">(</span><span class="n">AIN1</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-               <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN2</span><span class="p">,</span> <span class="n">dutyCycle1</span><span class="p">);</span>
-           <span class="p">}</span>
-
-
-           <span class="k">if</span> <span class="p">(</span><span class="n">direction2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-               <span class="n">digitalWrite</span><span class="p">(</span><span class="n">BIN1</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-               <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN2</span><span class="p">,</span> <span class="n">dutyCycle2</span><span class="p">);</span>
-           <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-               <span class="n">digitalWrite</span><span class="p">(</span><span class="n">BIN2</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-               <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN1</span><span class="p">,</span> <span class="n">dutyCycle2</span><span class="p">);</span>
-           <span class="p">}</span>
-
-           <span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
-
-           <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-           <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN2</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-           <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-           <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN2</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-
-           <span class="k">break</span><span class="p">;</span>
-
-
-
-
-       <span class="k">case</span> <span class="n">SPIN_MOTOR_1</span><span class="p">:</span>
-           <span class="nb">int</span> <span class="n">dutyCycle3</span><span class="p">,</span> <span class="n">dutyCycle4</span><span class="p">,</span> <span class="n">dutyCycle5</span><span class="p">,</span> <span class="n">dutyCycle6</span><span class="p">;</span>
-
-
-           <span class="o">//</span> <span class="n">Get</span> <span class="n">first</span> <span class="nb">set</span> <span class="n">of</span> <span class="n">duty</span> <span class="n">cycles</span>
-           <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">dutyCycle3</span><span class="p">);</span>
-           <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
-
-
-           <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">dutyCycle4</span><span class="p">);</span>
-           <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
-
-
-           <span class="o">//</span> <span class="n">Get</span> <span class="n">second</span> <span class="nb">set</span> <span class="n">of</span> <span class="n">duty</span> <span class="n">cycles</span>
-           <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">dutyCycle5</span><span class="p">);</span>
-           <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
-
-
-           <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">dutyCycle6</span><span class="p">);</span>
-           <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
-
-           <span class="n">dutyCycle3</span> <span class="o">=</span> <span class="n">constrain</span><span class="p">(</span><span class="n">dutyCycle3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
-           <span class="n">dutyCycle4</span> <span class="o">=</span> <span class="n">constrain</span><span class="p">(</span><span class="n">dutyCycle4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
-           <span class="n">dutyCycle5</span> <span class="o">=</span> <span class="n">constrain</span><span class="p">(</span><span class="n">dutyCycle5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
-           <span class="n">dutyCycle6</span> <span class="o">=</span> <span class="n">constrain</span><span class="p">(</span><span class="n">dutyCycle6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
-
-           <span class="n">digitalWrite</span><span class="p">(</span><span class="n">AIN1</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-           <span class="n">digitalWrite</span><span class="p">(</span><span class="n">BIN2</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-
-           <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN2</span><span class="p">,</span> <span class="n">dutyCycle3</span><span class="p">);</span>
-           <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN1</span><span class="p">,</span> <span class="n">dutyCycle4</span><span class="p">);</span>
-
-           <span class="n">delay</span><span class="p">(</span><span class="mi">3000</span><span class="p">);</span>
-
-           <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN2</span><span class="p">,</span> <span class="n">dutyCycle5</span><span class="p">);</span>
-           <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN1</span><span class="p">,</span> <span class="n">dutyCycle6</span><span class="p">);</span>
-
-           <span class="n">delay</span><span class="p">(</span><span class="mi">5000</span><span class="p">);</span>
-
-
-           <span class="o">//</span> <span class="n">Stop</span> <span class="n">the</span> <span class="n">motors</span>
-           <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-           <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN2</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-           <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-           <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN2</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-
-           <span class="k">break</span><span class="p">;</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9990ca13-9683-4a64-b71c-ca995703a787">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>To overcome friction, I began with a PWM of 20 on both motors, I increased by 5 until I was able to get the car to move and then I decreased by 1 until the car stopped moving. At full charge this value was around 42 but as the battery decreased the PWM value increased to 50~55. For continued open loop control I was able to create turning behavior using my SPIN_MOTORS command where I had 1 set of wheels spin forward and another spin backwards. For straight line calibration I set a 2 second time limit on the motors and began with both motors on a 50 percent duty cycle. There was a noticeable drift to the left. With a 1.25 calibration constant on the left motor, at full battery charge I was able to get the vehicle to travel in a straight line.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=13995ec7-7e6e-4339-a19b-64f67ace2bc7">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://youtube.com/shorts/ioN9Zn7gbn0"><img alt="Watch the video" src="https://img.youtube.com/vi/ioN9Zn7gbn0/0.jpg"/></a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8f6508f5-816a-47df-9c15-e5de1b78665e">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>In this video it demonstrates forward motion and then slow turning created by a small duty cycle value.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ba52bba3-e416-453d-942d-35348554697d">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://youtube.com/shorts/AiJzW57jEC8"><img alt="Watch the video" src="https://img.youtube.com/vi/AiJzW57jEC8/0.jpg"/></a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=45b8949e-a510-4209-93aa-c4cf0dbf3a46">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=da790679-f709-4aa5-b3c8-1fa27735d547">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7962,19 +7891,29 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1e951e55-b7a8-4cb8-98b0-4112b0c553ed">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b5ddb416-64b2-4a37-bd1d-fb19e0ab3752">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>I did not measure the PWM frequency on the oscilloscope and could not find information regarding the Artemis redboard nano PWM frequency. From what I found on the internet, comparable boards have a sampling rate of around 500 Hz to 1 kHz. Considering that the driver has an internal frequency of 50 kHz, these PWM frequencies should be fine, which is supported by our experimental results. If the PWM frequency is configured to run faster, it has the potential to decrease current and voltage ripple, creating a smoother operation.</p>
-<p>Experimentally, I found that the lowest PWM value that kept the robot in motion once it had overcome friction was 36. Using the SPIN_MOTOR_1 command, I got the car moving with the previously found minimum duty cycle. I then increased the duration it would run at the second duty cycle to 10 seconds and began decreasing the second interval duty cycle. I got it down to 36, and if I were to go lower than this value, the car would come to a stop before the end of the second time interval.</p>
+<p>Another type of infrared sensor is the structured light 3D scanner. It works by projecting infrared light patterns onto a surface and analyzing the distortions perceived by an infared sensor to determine both distance and geometry. Unlike ToF sensors, structured light scanners offer a wide field of view and can capture details of 3D structures and objects. They tend to be expensive and require significant processing to interpret the data. An alternative infrared distance sensing approach is lidar. Lidar works by sending a laser pulse and then gathers distance based on the duration it takes to receive a reflection. Lidar is typically used for longer range applications however its range is limited by the amount of power producing the laser making it costly.</p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=436310a3-013d-4837-b466-b01d09289a2e">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a361d4f0-2304-4fcd-a582-675e45b7e087">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>From my initial testing of the ToF, where I collected data with two separate surfaces as a backstop, one being a white and glossy surface and the other being a matte black surface, there is an observable discrepancy in the measured data, indicating that the ToF sensor is sensitive to different colors and textures. Intuitively, a glossy surface would reflect infrared light better, which facilitates better measurement. Additionally the black surface may be absorbing some infrared light hindering the ability to get accurate measurements.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ca78ef72-6b5a-4578-8dcb-a19c32652781">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7985,13 +7924,27 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e446cca6-54e4-41fe-a3ac-318414ab9e0c">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=177d7f45-9ea1-4f27-9706-557e653b38bf">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>I referenced Nila's webpage, which was recommended in class, to guide the formatting and content of my work. Additionally, I used <a href="https://www.arduino.cc/reference/tr/language/functions/analog-io/analogwrite/">this</a> webpage to gather information about the PWM frequency of analogWrite(). To assist with testing and generating code, I utilized ChatGPT.</p>
+<p>I referenced Nila's webpage, which was recommended in class, to guide the formatting and content of my report. To assist with testing and generating test code and plots, I utilized ChatGPT. I found information regarding structured light scanners <a href="https://en.wikipedia.org/wiki/Structured-light_3D_scanner">here</a> and lidar <a href="https://www.synopsys.com/glossary/what-is-lidar.html">here</a>. I engaged in some general discussion about the lab with Aidan McNay.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f029c44f-99b4-4e50-9ba8-d96ee2f74f24">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
 </div>
 </div>
 </div>
