@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Lab_9</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7510,59 +7510,939 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=165050db-74d0-481f-a3cd-1d71d3d3d2ca">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dd375639-0840-4d64-9665-5607d2371a0d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="ECE-5160:-Fast-Robots">ECE 5160: Fast Robots<a class="anchor-link" href="#ECE-5160:-Fast-Robots">¶</a></h1>
+<p><a href="index.html">Return to Main Page</a></p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e6ec3db8-cc29-4709-9550-15f0a5b0e6a6">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dbb8e716-5df3-4ed9-a513-0bf25f7b6897">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center>
-<img alt="No description has been provided for this image" src="Media\IMG_0508.JPG" width="300"/>
-</center>
+<h1 id="Lab-9">Lab 9<a class="anchor-link" href="#Lab-9">¶</a></h1>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bd8a2861-6023-4489-9160-826a10ecad3e">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0b7ea533-f0ef-40ea-b73f-8300318ccb1d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Sabian Grier is pursuing a Master of Engineering degree in Electrical and Computer Engineering at Cornell University.</p>
+<h2 id="Objective">Objective<a class="anchor-link" href="#Objective">¶</a></h2>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b7437591-05e3-490d-8be3-7325b3a2ce72">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=215eb79f-9c8f-40d2-a7d7-f65efe02e7aa">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Contents">Contents<a class="anchor-link" href="#Contents">¶</a></h2><ul>
-<li><a href="Lab_1A.html">Lab 1A</a></li>
-<li><a href="Lab_1B.html">Lab 1B</a></li>
-<li><a href="Lab_2.html">Lab 2</a></li>
-<li><a href="Lab_3.html">Lab 3</a></li>
-<li><a href="Lab_4.html">Lab 4</a></li>
-<li><a href="Lab_5.html">Lab 5</a></li>
-<li><a href="Lab_6.html">Lab 6</a></li>
-<li><a href="Lab_7.html">Lab 7</a></li>
-<li><a href="Lab_8.html">Lab 8</a></li>
-<li><a href="Lab_9.html">Lab 9</a></li>
-</ul>
+<p>In Lab 9, we were tasked with mapping a static room using our robot. To generate this map, we placed the robot at several marked locations and had it rotate in place while collecting data from its Time of Flight (ToF) sensor. For the rotation mechanism, we had the option to use either open-loop control or a PID controller. After gathering angular and distance measurements, we used transformation matrices to convert the data into Cartesian coordinates, allowing us to construct a 2D representation of the environment.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=67cb7475-aa75-4cc1-a2bc-4b41a8398697">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Control">Control<a class="anchor-link" href="#Control">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=098c39cb-5472-4833-b8c9-9cc6ea91c8d9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>For rotation, I chose to use the orientation PID controller implemented in Lab 6. During a full rotation, the robot takes 15 measurements at 24-degree increments. Leveraging the same Bluetooth PID flag mechanism used in Lab 6, I modified the control loop to cycle through each setpoint and collect distance data. At each setpoint, the robot recorded 10 distance measurements along with the corresponding DMP-reported yaw angle. Given the inherent noise present in both the ToF and DMP sensors, I determined that averaging multiple readings at each point would improve the accuracy of the final map.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c6dcc321-a871-4b20-a597-c84bd62b1543">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">void</span> <span class="n">loop</span><span class="p">()</span> <span class="p">{</span>
+   <span class="n">BLEDevice</span> <span class="n">central</span> <span class="o">=</span> <span class="n">BLE</span><span class="o">.</span><span class="n">central</span><span class="p">();</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">central</span><span class="p">)</span> <span class="p">{</span>
+       <span class="k">while</span> <span class="p">(</span><span class="n">central</span><span class="o">.</span><span class="n">connected</span><span class="p">())</span> <span class="p">{</span>
+           <span class="n">write_data</span><span class="p">();</span>
+           <span class="n">read_data</span><span class="p">();</span>
+
+
+           <span class="k">if</span> <span class="p">(</span><span class="n">PID_flag</span><span class="p">)</span> <span class="p">{</span>
+               <span class="n">unsigned</span> <span class="n">long</span> <span class="n">stabilizationStart</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
+               <span class="k">while</span> <span class="p">(</span><span class="n">millis</span><span class="p">()</span> <span class="o">-</span> <span class="n">stabilizationStart</span> <span class="o">&lt;</span> <span class="mi">2000</span><span class="p">)</span> <span class="p">{</span>
+                   <span class="n">icm_20948_DMP_data_t</span> <span class="n">dummyData</span><span class="p">;</span>
+                   <span class="n">myICM</span><span class="o">.</span><span class="n">readDMPdataFromFIFO</span><span class="p">(</span><span class="o">&amp;</span><span class="n">dummyData</span><span class="p">);</span>
+                   <span class="n">delay</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+               <span class="p">}</span>
+
+
+               <span class="n">start_time_1</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
+               <span class="nb">bool</span> <span class="n">yaw_offset_set</span> <span class="o">=</span> <span class="n">false</span><span class="p">;</span>
+               <span class="n">double</span> <span class="n">yaw_offset_deg</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+               <span class="n">sensor2</span><span class="o">.</span><span class="n">startRanging</span><span class="p">();</span>
+
+
+               <span class="n">static</span> <span class="nb">int</span> <span class="n">distance_count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+               <span class="n">static</span> <span class="nb">int</span> <span class="n">last_stage</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+
+
+               <span class="k">while</span> <span class="p">(</span><span class="n">millis</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time_1</span> <span class="o">&lt;</span> <span class="mi">45000</span> <span class="o">&amp;&amp;</span> <span class="n">PID_flag</span> <span class="o">&amp;&amp;</span> <span class="n">central</span><span class="o">.</span><span class="n">connected</span><span class="p">())</span> <span class="p">{</span>
+                   <span class="n">icm_20948_DMP_data_t</span> <span class="n">dmpData</span><span class="p">;</span>
+                   <span class="n">myICM</span><span class="o">.</span><span class="n">readDMPdataFromFIFO</span><span class="p">(</span><span class="o">&amp;</span><span class="n">dmpData</span><span class="p">);</span>
+                   <span class="k">if</span> <span class="p">((</span><span class="n">myICM</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="n">ICM_20948_Stat_Ok</span><span class="p">)</span> <span class="o">||</span>
+                       <span class="p">(</span><span class="n">myICM</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="n">ICM_20948_Stat_FIFOMoreDataAvail</span><span class="p">))</span> <span class="p">{</span>
+                       <span class="k">if</span> <span class="p">((</span><span class="n">dmpData</span><span class="o">.</span><span class="n">header</span> <span class="o">&amp;</span> <span class="n">DMP_header_bitmap_Quat9</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                           <span class="n">double</span> <span class="n">q1</span> <span class="o">=</span> <span class="p">((</span><span class="n">double</span><span class="p">)</span><span class="n">dmpData</span><span class="o">.</span><span class="n">Quat9</span><span class="o">.</span><span class="n">Data</span><span class="o">.</span><span class="n">Q1</span><span class="p">)</span> <span class="o">/</span> <span class="mf">1073741824.0</span><span class="p">;</span>
+                           <span class="n">double</span> <span class="n">q2</span> <span class="o">=</span> <span class="p">((</span><span class="n">double</span><span class="p">)</span><span class="n">dmpData</span><span class="o">.</span><span class="n">Quat9</span><span class="o">.</span><span class="n">Data</span><span class="o">.</span><span class="n">Q2</span><span class="p">)</span> <span class="o">/</span> <span class="mf">1073741824.0</span><span class="p">;</span>
+                           <span class="n">double</span> <span class="n">q3</span> <span class="o">=</span> <span class="p">((</span><span class="n">double</span><span class="p">)</span><span class="n">dmpData</span><span class="o">.</span><span class="n">Quat9</span><span class="o">.</span><span class="n">Data</span><span class="o">.</span><span class="n">Q3</span><span class="p">)</span> <span class="o">/</span> <span class="mf">1073741824.0</span><span class="p">;</span>
+                           <span class="n">double</span> <span class="n">q0</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="p">((</span><span class="n">q1</span> <span class="o">*</span> <span class="n">q1</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">q2</span> <span class="o">*</span> <span class="n">q2</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">q3</span> <span class="o">*</span> <span class="n">q3</span><span class="p">)));</span>
+                           <span class="n">double</span> <span class="n">yaw</span> <span class="o">=</span> <span class="n">atan2</span><span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="p">(</span><span class="n">q0</span> <span class="o">*</span> <span class="o">-</span><span class="n">q3</span> <span class="o">+</span> <span class="n">q1</span> <span class="o">*</span> <span class="n">q2</span><span class="p">),</span> <span class="mf">1.0</span> <span class="o">-</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="p">((</span><span class="n">q1</span> <span class="o">*</span> <span class="n">q1</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">q3</span> <span class="o">*</span> <span class="n">q3</span><span class="p">)));</span>
+                           <span class="n">double</span> <span class="n">current_yaw_deg</span> <span class="o">=</span> <span class="n">yaw</span> <span class="o">*</span> <span class="mf">180.0</span> <span class="o">/</span> <span class="n">M_PI</span><span class="p">;</span>
+                           <span class="k">if</span> <span class="p">(</span><span class="n">current_yaw_deg</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                               <span class="n">current_yaw_deg</span> <span class="o">+=</span> <span class="mi">360</span><span class="p">;</span>
+                           <span class="p">}</span>
+
+
+                           <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">yaw_offset_set</span><span class="p">)</span> <span class="p">{</span>
+                               <span class="n">yaw_offset_deg</span> <span class="o">=</span> <span class="n">current_yaw_deg</span><span class="p">;</span>
+                               <span class="n">yaw_offset_set</span> <span class="o">=</span> <span class="n">true</span><span class="p">;</span>
+                           <span class="p">}</span>
+
+
+                           <span class="n">double</span> <span class="n">yaw_relative</span> <span class="o">=</span> <span class="n">current_yaw_deg</span> <span class="o">-</span> <span class="n">yaw_offset_deg</span><span class="p">;</span>
+                           <span class="k">while</span> <span class="p">(</span><span class="n">yaw_relative</span> <span class="o">&gt;</span> <span class="mi">180</span><span class="p">)</span> <span class="n">yaw_relative</span> <span class="o">-=</span> <span class="mi">360</span><span class="p">;</span>
+                           <span class="k">while</span> <span class="p">(</span><span class="n">yaw_relative</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">180</span><span class="p">)</span> <span class="n">yaw_relative</span> <span class="o">+=</span> <span class="mi">360</span><span class="p">;</span>
+
+
+                           <span class="n">unsigned</span> <span class="n">long</span> <span class="n">pid_elapsed</span> <span class="o">=</span> <span class="n">millis</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time_1</span><span class="p">;</span>
+                           <span class="nb">int</span> <span class="n">stage</span> <span class="o">=</span> <span class="n">pid_elapsed</span> <span class="o">/</span> <span class="mi">3000</span><span class="p">;</span>
+                           <span class="k">if</span> <span class="p">(</span><span class="n">stage</span> <span class="o">&gt;</span> <span class="mi">14</span><span class="p">)</span> <span class="n">stage</span> <span class="o">=</span> <span class="mi">14</span><span class="p">;</span>
+
+
+                           <span class="n">double</span> <span class="n">setpoints</span><span class="p">[</span><span class="mi">15</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">24.0</span><span class="p">,</span> <span class="mf">48.0</span><span class="p">,</span> <span class="mf">72.0</span><span class="p">,</span> <span class="mf">96.0</span><span class="p">,</span> <span class="mf">120.0</span><span class="p">,</span> <span class="mf">144.0</span><span class="p">,</span> <span class="mf">168.0</span><span class="p">,</span> <span class="mf">192.0</span><span class="p">,</span> <span class="mf">216.0</span><span class="p">,</span> <span class="mf">240.0</span><span class="p">,</span> <span class="mf">264.0</span><span class="p">,</span> <span class="mf">288.0</span><span class="p">,</span> <span class="mf">312.0</span><span class="p">,</span> <span class="mf">336.0</span><span class="p">};</span>
+                           <span class="n">double</span> <span class="n">setpoint</span> <span class="o">=</span> <span class="n">setpoints</span><span class="p">[</span><span class="n">stage</span><span class="p">];</span>
+                           <span class="k">if</span> <span class="p">(</span><span class="n">setpoint</span> <span class="o">&gt;</span> <span class="mi">180</span><span class="p">)</span> <span class="n">setpoint</span> <span class="o">-=</span> <span class="mi">360</span><span class="p">;</span>
+
+
+                           <span class="n">double</span> <span class="n">error</span> <span class="o">=</span> <span class="n">yaw_relative</span> <span class="o">-</span> <span class="n">setpoint</span><span class="p">;</span>
+                           <span class="k">while</span> <span class="p">(</span><span class="n">error</span> <span class="o">&gt;</span> <span class="mi">180</span><span class="p">)</span> <span class="n">error</span> <span class="o">-=</span> <span class="mi">360</span><span class="p">;</span>
+                           <span class="k">while</span> <span class="p">(</span><span class="n">error</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">180</span><span class="p">)</span> <span class="n">error</span> <span class="o">+=</span> <span class="mi">360</span><span class="p">;</span>
+
+
+                           <span class="n">unsigned</span> <span class="n">long</span> <span class="n">now</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
+                           <span class="n">double</span> <span class="n">dt</span> <span class="o">=</span> <span class="p">(</span><span class="n">now</span> <span class="o">-</span> <span class="n">last_time</span><span class="p">)</span> <span class="o">/</span> <span class="mf">1000.0</span><span class="p">;</span>
+                           <span class="k">if</span> <span class="p">(</span><span class="n">dt</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="n">dt</span> <span class="o">=</span> <span class="mf">0.001</span><span class="p">;</span>
+                           <span class="k">if</span> <span class="p">(</span><span class="n">dt</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="n">dt</span> <span class="o">=</span> <span class="mf">0.0001</span><span class="p">;</span>
+                           <span class="n">last_time</span> <span class="o">=</span> <span class="n">now</span><span class="p">;</span>
+
+
+                           <span class="k">if</span> <span class="p">(</span><span class="n">dt</span> <span class="o">==</span> <span class="mf">0.0001</span><span class="p">)</span> <span class="n">derivative</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                           <span class="k">else</span> <span class="n">derivative</span> <span class="o">=</span> <span class="p">(</span><span class="n">error</span> <span class="o">-</span> <span class="n">last_error</span><span class="p">)</span> <span class="o">/</span> <span class="n">dt</span><span class="p">;</span>
+                           <span class="n">last_error</span> <span class="o">=</span> <span class="n">error</span><span class="p">;</span>
+
+
+                           <span class="n">double</span> <span class="n">pid_output</span> <span class="o">=</span> <span class="n">Kp</span> <span class="o">*</span> <span class="n">error</span> <span class="o">+</span> <span class="n">Ki</span> <span class="o">*</span> <span class="n">integral</span> <span class="o">+</span> <span class="n">Kd</span> <span class="o">*</span> <span class="n">derivative</span><span class="p">;</span>
+                           <span class="n">double</span> <span class="n">pid_pwm</span> <span class="o">=</span> <span class="n">PWM_MIN</span> <span class="o">+</span> <span class="n">pid_output</span><span class="p">;</span>
+
+
+                           <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="p">((</span><span class="n">error</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">pid_output</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">pid_output</span> <span class="o">+</span> <span class="n">PWM_MIN</span> <span class="o">==</span> <span class="n">PWM_MAX</span><span class="p">)</span> <span class="o">||</span>
+                                 <span class="p">(</span><span class="n">error</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">pid_output</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">pid_output</span> <span class="o">-</span> <span class="n">PWM_MIN</span> <span class="o">==</span> <span class="o">-</span><span class="n">PWM_MAX</span><span class="p">)))</span> <span class="p">{</span>
+                               <span class="n">integral</span> <span class="o">+=</span> <span class="n">error</span> <span class="o">*</span> <span class="n">dt</span><span class="p">;</span>
+                           <span class="p">}</span>
+
+
+                           <span class="n">pid_pwm</span> <span class="o">=</span> <span class="n">constrain</span><span class="p">(</span><span class="n">pid_pwm</span><span class="p">,</span> <span class="n">PWM_MIN</span><span class="p">,</span> <span class="n">PWM_MAX</span><span class="p">);</span>
+                           <span class="nb">int</span> <span class="n">pwmValue</span> <span class="o">=</span> <span class="p">(</span><span class="nb">int</span><span class="p">)</span> <span class="n">pid_pwm</span><span class="p">;</span>
+
+
+                           <span class="k">if</span> <span class="p">(</span><span class="n">fabs</span><span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">2.0</span><span class="p">)</span> <span class="p">{</span>
+                               <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+                               <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN2</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+                               <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+                               <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN2</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+
+                               <span class="o">//</span> <span class="n">Reset</span> <span class="n">distance</span> <span class="n">count</span> <span class="k">for</span> <span class="n">new</span> <span class="n">stage</span>
+                               <span class="k">if</span> <span class="p">(</span><span class="n">stage</span> <span class="o">!=</span> <span class="n">last_stage</span><span class="p">)</span> <span class="p">{</span>
+                                   <span class="n">distance_count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                                   <span class="n">last_stage</span> <span class="o">=</span> <span class="n">stage</span><span class="p">;</span>
+                               <span class="p">}</span>
+
+
+                               <span class="k">if</span> <span class="p">(</span><span class="n">distance_count</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="o">&amp;&amp;</span> <span class="n">sensor2</span><span class="o">.</span><span class="n">checkForDataReady</span><span class="p">())</span> <span class="p">{</span>
+                                   <span class="n">last_distance</span> <span class="o">=</span> <span class="n">sensor2</span><span class="o">.</span><span class="n">getDistance</span><span class="p">();</span>
+                                   <span class="n">distances</span><span class="p">[</span><span class="n">index_1</span><span class="p">]</span> <span class="o">=</span> <span class="n">last_distance</span><span class="p">;</span>
+                                   <span class="n">yaws</span><span class="p">[</span><span class="n">index_1</span><span class="p">]</span> <span class="o">=</span> <span class="n">yaw_relative</span><span class="p">;</span>
+                                   <span class="n">sensor2</span><span class="o">.</span><span class="n">clearInterrupt</span><span class="p">();</span>
+                                   <span class="n">Serial</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">"Distance "</span><span class="p">);</span>
+                                   <span class="n">Serial</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">distance_count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+                                   <span class="n">Serial</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">": "</span><span class="p">);</span>
+                                   <span class="n">Serial</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">last_distance</span><span class="p">);</span>
+                                   <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="s2">" mm"</span><span class="p">);</span>
+                                   <span class="n">distance_count</span><span class="o">++</span><span class="p">;</span>
+                                   <span class="n">index_1</span><span class="o">++</span><span class="p">;</span>
+                               <span class="p">}</span>
+                           <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                               <span class="k">if</span> <span class="p">(</span><span class="n">pid_output</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                                   <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+                                   <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+                                   <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN2</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">)(</span><span class="mf">1.25</span> <span class="o">*</span> <span class="n">pwmValue</span><span class="p">));</span>
+                                   <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN2</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">)(</span><span class="mf">1.35</span> <span class="o">*</span> <span class="n">pwmValue</span><span class="p">));</span>
+                                   <span class="n">pwm_vals</span><span class="p">[</span><span class="n">index_1</span><span class="p">]</span> <span class="o">=</span> <span class="n">pwmValue</span><span class="p">;</span>
+                               <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                                   <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN2</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+                                   <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN2</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+                                   <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN1</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">)(</span><span class="mf">1.2</span> <span class="o">*</span> <span class="n">pwmValue</span><span class="p">));</span>
+                                   <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN1</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">)(</span><span class="mf">1.25</span> <span class="o">*</span> <span class="n">pwmValue</span><span class="p">));</span>
+                                   <span class="n">pwm_vals</span><span class="p">[</span><span class="n">index_1</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">pwmValue</span><span class="p">;</span>
+                               <span class="p">}</span>
+                           <span class="p">}</span>
+                       <span class="p">}</span>
+                   <span class="p">}</span>
+               <span class="p">}</span>
+
+
+               <span class="n">sensor2</span><span class="o">.</span><span class="n">stopRanging</span><span class="p">();</span>
+
+               <span class="c1">###Transmit data###</span>
+
+               <span class="n">PID_flag</span> <span class="o">=</span> <span class="n">false</span><span class="p">;</span>
+               <span class="n">index_1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+           <span class="p">}</span>
+       <span class="p">}</span>
+       <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"Disconnected"</span><span class="p">);</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=34082c8d-00f4-492c-aff7-04d4e0bf485d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>At each setpoint, I used a time-based approach to manage the PID iteration. The robot was given a 3-second window to stabilize and collect 10 distance measurements. In testing, this time frame consistently proved sufficient. I deliberately avoided techniques that rely on small PID outputs falling within the motor's deadband to bring the robot to a stop. Through experimentation, I found that as the battery voltage dropped, the effective deadband widened, leading to reduced angular accuracy. Instead, I allowed the PID controller to operate until the robot was within 2 degrees of the target angle before stopping. This method yielded reliable results, as demonstrated in the following plot of actual versus desired angles:</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8b590cb2-435c-466e-a81b-51b8cf51f554">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Polar Plot" src="Media/Lab_9_Images/Actual_vs_Desired.png" width="500"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3b765ffd-0bae-4001-83ad-7890999db448">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>This 2-degree tolerance also informed my decision to record the DMP yaw angle alongside each distance measurement. By associating each distance reading with the actual yaw angle rather than the target setpoint, the precise angular accuracy relative to the setpoint became less critical. As long as enough measurements are taken throughout the rotation, mapping distances to the robot’s true orientation still allows for an accurate reconstruction of the environment.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a8791bc1-85eb-4dca-bb04-aef2f70fa931">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><a href="https://youtube.com/shorts/Fyg3lhJCHQ4"><img alt="Watch the video" src="https://img.youtube.com/vi/Fyg3lhJCHQ4/0.jpg"/></a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7c279178-c2aa-4bde-820a-4189a157bc85">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>In order to gain an understanding of the accuracy and precision I performed a rotation in the world at (-3,-2) I then took that data and took the mean and standard deviation of the 10 angle and distance measurements at each setpoint using this code:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3fc3b7e3-e99c-4a2b-b29e-0da8b012a520">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">angles</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">angle_strs</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+<span class="n">distances</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">distance_strs</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="n">angles_blocks</span> <span class="o">=</span> <span class="n">angles</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">distances_blocks</span> <span class="o">=</span> <span class="n">distances</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+
+<span class="n">angle_means</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">angles_blocks</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">angle_stds</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">angles_blocks</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">distance_means</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">distances_blocks</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">distance_stds</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">distances_blocks</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">angle_means</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Angle </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">:"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  Angle  → Mean: </span><span class="si">{</span><span class="n">angle_means</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s2">7.3f</span><span class="si">}</span><span class="s2">, Std Dev: </span><span class="si">{</span><span class="n">angle_stds</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s2">6.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  Distance → Mean: </span><span class="si">{</span><span class="n">distance_means</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s2">7.1f</span><span class="si">}</span><span class="s2">, Std Dev: </span><span class="si">{</span><span class="n">distance_stds</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s2">6.1f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Angle 1:
+  Angle  → Mean:  -0.001, Std Dev:  0.002
+  Distance → Mean:   858.5, Std Dev:   18.8
+Angle 2:
+  Angle  → Mean:  22.625, Std Dev:  0.714
+  Distance → Mean:   744.1, Std Dev:   19.8
+Angle 3:
+  Angle  → Mean:  47.712, Std Dev:  0.505
+  Distance → Mean:   926.0, Std Dev:   62.0
+Angle 4:
+  Angle  → Mean:  71.464, Std Dev:  1.131
+  Distance → Mean:   749.2, Std Dev:   47.4
+Angle 5:
+  Angle  → Mean:  96.612, Std Dev:  0.209
+  Distance → Mean:   704.2, Std Dev:    1.5
+Angle 6:
+  Angle  → Mean: 119.440, Std Dev:  0.063
+  Distance → Mean:   796.7, Std Dev:   17.6
+Angle 7:
+  Angle  → Mean: 145.480, Std Dev:  0.130
+  Distance → Mean:   838.6, Std Dev:   23.9
+Angle 8:
+  Angle  → Mean: 169.046, Std Dev:  0.997
+  Distance → Mean:   703.0, Std Dev:   11.5
+Angle 9:
+  Angle  → Mean: -169.267, Std Dev:  0.622
+  Distance → Mean:   701.5, Std Dev:    5.4
+Angle 10:
+  Angle  → Mean: -143.615, Std Dev:  1.432
+  Distance → Mean:   856.9, Std Dev:   30.0
+Angle 11:
+  Angle  → Mean: -120.060, Std Dev:  0.538
+  Distance → Mean:   802.9, Std Dev:    7.9
+Angle 12:
+  Angle  → Mean: -96.902, Std Dev:  0.690
+  Distance → Mean:   707.2, Std Dev:    4.2
+Angle 13:
+  Angle  → Mean: -72.254, Std Dev:  0.373
+  Distance → Mean:  1002.0, Std Dev:  322.8
+Angle 14:
+  Angle  → Mean: -49.661, Std Dev:  1.511
+  Distance → Mean:  1950.6, Std Dev:  308.3
+Angle 15:
+  Angle  → Mean: -25.945, Std Dev:  0.169
+  Distance → Mean:  1666.9, Std Dev:   12.0
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d39d8d8f-82d9-4303-9c49-9b7e8400c341">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>I then took the average of the mean and standard deviation across all 15 trials.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a9b319e2-02bb-487d-96f6-b92cdf34d1c9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">avg_angle_std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">angle_stds</span><span class="p">)</span>
+<span class="n">avg_distance_std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">distance_stds</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Average of angle std devs:     </span><span class="si">{</span><span class="n">avg_angle_std</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">°"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Average of distance std devs:  </span><span class="si">{</span><span class="n">avg_distance_std</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> mm"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Average of angle std devs:     0.606°
+Average of distance std devs:  59.5 mm
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bdd5a9ab-b088-49ce-bf2d-6b77e8aa9436">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The average of the angular standard deviations across all angles represents the typical noise level in the yaw measurements, providing an estimate of the consistency of the robot’s orientation data.</p>
+<p>Similarly, the average of the distance standard deviations reflects the precision of the Time of Flight (ToF) sensor, indicating how tightly clustered the distance measurements are at each setpoint and thus serving as a measure of repeatability.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f38fc07d-4555-46a6-ae9f-565e48830aaa">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>I then took 150 measurements at a range of 2m to gain an understanding of the accuracy.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a5d7167e-9039-44cc-8285-b777b7537247">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [101]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">mean_val</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+<span class="n">std_val</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Mean: </span><span class="si">{</span><span class="n">mean_val</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Standard Deviation: </span><span class="si">{</span><span class="n">std_val</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Mean Error: </span><span class="si">{</span><span class="mi">2000</span><span class="o">-</span><span class="n">mean_val</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Mean: 1934.42
+Standard Deviation: 7.33
+Mean Error: 65.58
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=19db46a0-dbfb-4232-8dbf-28ec74b83f1e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [75]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">yaw_error_deg</span> <span class="o">=</span> <span class="mf">0.606</span> 
+<span class="n">yaw_error_rad</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">yaw_error_deg</span><span class="p">)</span>
+
+<span class="n">true_distance_mm</span> <span class="o">=</span> <span class="mi">2000</span>
+<span class="n">sensor_noise_mm</span> <span class="o">=</span> <span class="mf">59.5</span>
+<span class="n">sensor_bias_mm</span> <span class="o">=</span> <span class="mf">65.6</span>
+
+<span class="n">measured_distance_mm</span> <span class="o">=</span> <span class="n">true_distance_mm</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">yaw_error_rad</span><span class="p">)</span>
+<span class="n">angular_error_mm</span> <span class="o">=</span> <span class="n">measured_distance_mm</span> <span class="o">-</span> <span class="n">true_distance_mm</span>
+
+<span class="n">total_rms_error</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span>
+    <span class="n">angular_error_mm</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span>
+    <span class="n">sensor_noise_mm</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span>
+    <span class="n">sensor_bias_mm</span><span class="o">**</span><span class="mi">2</span>
+<span class="p">)</span>
+
+<span class="n">worst_case_error</span> <span class="o">=</span> <span class="n">angular_error_mm</span> <span class="o">+</span> <span class="n">sensor_noise_mm</span> <span class="o">+</span> <span class="n">sensor_bias_mm</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Angular error component: </span><span class="si">{</span><span class="n">angular_error_mm</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> mm"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Total RMS error: </span><span class="si">{</span><span class="n">total_rms_error</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> mm"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Worst case total error: </span><span class="si">{</span><span class="n">worst_case_error</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> mm"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Angular error component: 0.112 mm
+Total RMS error: 88.56 mm
+Worst case total error: 125.21 mm
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=998ea8b9-138d-4349-af7d-8563e35e5758">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>This code estimates the effect of angular and sensor error on distance measurements. This is the case where the measured distance should be 2000 mm but we are assuming a yaw error of 0.606 degrees. The angular_error_mm is computed by comparing the measured distance, which is longer due to the angle error, to the true distance. Additionally, the found values for sensor noise and bias are included to calculate two overall error estimates: the root mean square (RMS) error, which combines all error sources in a way that accounts for the fact that not all the errors are correlated, and the worstcase error, which sums them directly to represent the maximum expected deviation. When measuring the closest point in the 4×4 m grid, we can expect an RMS error of 99.56 mm and a worst case error of 125.21 mm. I then repeated the same calculation for the farthest point in the grid, yielding an RMS error of 92.68 mm and a worst case error of 152.40 mm.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a902c96d-50ae-4a07-8634-5d53d632f3b6">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Read-out-Distances">Read out Distances<a class="anchor-link" href="#Read-out-Distances">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=934a0fff-c11d-4fb9-a7f5-d288b4224711">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>As a preliminary sanity check, I conducted three trials at the first measurement point (−3,−2). I overlaid the results on a single polar plot to verify consistency across trials. The corresponding polar plots were generated using the following code:</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fc06a53b-6e53-4067-8eaf-9b142b26e458">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">angles_rad</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">angles_deg</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">polar</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">angles_rad</span><span class="p">,</span> <span class="n">distances_mm</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">'o'</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Polar Plot: Distance vs Angle (-3,-2)"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c0b3fe8a-c7cf-44cf-a027-3b430914f85a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Furthermore, after converting to cartesian coordinates, the plot output was consistent with the environment which can be observed below the polar plot.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cfaccd32-5a03-42b1-b680-50bcbfc1eadf">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="(-3,-2)">(-3,-2)<a class="anchor-link" href="#(-3,-2)">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c0ee811e-3dbc-4a95-81be-275c2e80cfbc">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Polar Plot" src="Media/Lab_9_Images/3_plot_overlay.png" width="400"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6bbe921a-da86-4631-8485-f7a3da4f261b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Global Plot" src="Media/Lab_9_Images/global(-3,-2).png" width="400"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6081bf88-de6d-4fcc-bd7e-1f8d6ca85c95">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="(0,0)">(0,0)<a class="anchor-link" href="#(0,0)">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=038ad7ee-8e83-441b-88be-e5524cd2f2b4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Polar Plot" src="Media/Lab_9_Images/polar(0,0).png" width="400"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3fa530d6-ef31-4ca7-bed5-39c3306bcce4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Global Plot" src="Media/Lab_9_Images/global(0,0).png" width="400"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=18114792-8b85-4b2b-a280-ecb97ccec186">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="(5,-3)">(5,-3)<a class="anchor-link" href="#(5,-3)">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a2238b94-fe82-48a9-9953-2d1b405aaaa1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Polar Plot" src="Media/Lab_9_Images/polar(5,-3).png" width="400"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c5f9f8af-a3e2-4b84-a56c-2e15d25bc4cd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Global Plot" src="Media/Lab_9_Images/global(5,-3).png" width="400"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=176f938b-986b-4984-82da-c25410839f7b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="(0,3)">(0,3)<a class="anchor-link" href="#(0,3)">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bc2e021f-0af7-4dd5-8d3c-5744f5435971">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Polar Plot" src="Media/Lab_9_Images/polar(0,3).png" width="400"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=131f1fb1-c386-4dee-b3bd-0bfa23c7cbc7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Global Plot" src="Media/Lab_9_Images/global(0,3).png" width="400"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=03fbd194-b4ce-4c11-9163-535d3604f107">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="(5,3)">(5,3)<a class="anchor-link" href="#(5,3)">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=148b3281-fff8-414a-aa42-a67c5e2a6530">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Polar Plot" src="Media/Lab_9_Images/polar(5,3).png" width="400"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=79eeb185-b223-40d5-9f2f-952b3e592d73">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Global Plot" src="Media/Lab_9_Images/global(5,3).png" width="400"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=65044798-27fb-4328-9271-e560e5b038b4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The conversion from polar to cartesian is performed using the matrices below which were discussed in lecture 2.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ebd8e1d2-cc95-47ca-97aa-44d41cca5762">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Transformations" src="Media/Lab_9_Images/T_mat_2.png" width="400"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c45f0f79-5319-4548-8e55-4de1d2602610">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Transformations" src="Media/Lab_9_Images/T_mat_1.png" width="400"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c9f9234f-af6a-4234-8e39-f805e14a8d0c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>This was implemented in python using the following code which allowed me convert all my polar plots to cartesian plots.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2428e048-a8df-4360-adad-c93736c3dfb7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">x_R</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span> <span class="o">*</span> <span class="mf">304.8</span>
+<span class="n">y_R</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="mf">304.8</span>
+
+<span class="n">x_global</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">y_global</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">angles_rad</span><span class="p">)):</span>
+    <span class="n">theta</span> <span class="o">=</span> <span class="n">angles_rad</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+
+    <span class="n">p_tof</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="n">distances_mm</span><span class="p">[</span><span class="n">i</span><span class="p">]],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
+
+    <span class="n">T_tof_to_robot</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+        <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="p">])</span>
+
+    <span class="n">cos_t</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="o">-</span><span class="n">theta</span><span class="p">)</span>
+    <span class="n">sin_t</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="o">-</span><span class="n">theta</span><span class="p">)</span>
+    <span class="n">T_robot_to_world</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+        <span class="p">[</span><span class="n">cos_t</span><span class="p">,</span> <span class="o">-</span><span class="n">sin_t</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">x_R</span><span class="p">],</span>
+        <span class="p">[</span><span class="n">sin_t</span><span class="p">,</span>  <span class="n">cos_t</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">y_R</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span>      <span class="mi">0</span><span class="p">,</span>     <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span>      <span class="mi">0</span><span class="p">,</span>     <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="p">])</span>
+
+    <span class="n">p_world</span> <span class="o">=</span> <span class="n">T_robot_to_world</span> <span class="o">@</span> <span class="n">T_tof_to_robot</span> <span class="o">@</span> <span class="n">p_tof</span>
+
+    <span class="n">x_global</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">p_world</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+    <span class="n">y_global</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">p_world</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># Plotting</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_global</span><span class="p">,</span> <span class="n">y_global</span><span class="p">,</span> <span class="s1">'o'</span><span class="p">)</span>  <span class="c1"># No connecting lines</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'equal'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'X (mm)'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Y (mm)'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Global Plot'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8795c166-b9ad-49ef-bcae-6e1c94a798ad">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>After generating all of my cartesian plots I combined them all together to create a complete 2D map of the environment set up in the lab.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5f047929-cbe1-4e23-83f0-09c3ab15b744">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_global</span><span class="p">,</span> <span class="n">y_global</span><span class="p">,</span> <span class="s1">'o'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'Set 1'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_global_2</span><span class="p">,</span> <span class="n">y_global_2</span><span class="p">,</span> <span class="s1">'o'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'Set 2'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_global_3</span><span class="p">,</span> <span class="n">y_global_3</span><span class="p">,</span> <span class="s1">'o'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'Set 3'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_global_4</span><span class="p">,</span> <span class="n">y_global_4</span><span class="p">,</span> <span class="s1">'o'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'Set 4'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_global_5</span><span class="p">,</span> <span class="n">y_global_5</span><span class="p">,</span> <span class="s1">'o'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'Set 5'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'equal'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'X (mm)'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Y (mm)'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'All Global Plots'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4f65bf91-bbb1-4175-a995-6c5f79c27071">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="All Global Plots" src="Media/Lab_9_Images/all_plots.png" width="500"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a914c0e1-6aa6-45d2-8180-6b0acfab2fac">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Surprisingly, the data closely resembled the actual environment. By following the general trends in the measurements, I was able to add boundaries that aligned well with the physical space.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3ae41dc1-fb91-4285-8de4-17a9f4767e11">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="All Global Plots With Boundary" src="Media/Lab_9_Images/all_plots_b.png" width="500"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=37f5acc5-a791-4a36-975a-f0b31713d436">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Refrences">Refrences<a class="anchor-link" href="#Refrences">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4a6922a6-b9fe-4d1c-8d44-3b97daba0628">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>In Lab 9, I referenced Daria Kot's and Annabel Lian's webpages for guidance on generating Cartesian plots. I also used ChatGPT to assist with plot generation, Arduino debugging, and text editing. Additionally, it supported my analysis of accuracy and precision in the sensor data.</p>
 </div>
 </div>
 </div>
