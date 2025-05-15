@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Lab_12</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7510,62 +7510,661 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=165050db-74d0-481f-a3cd-1d71d3d3d2ca">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2d885eaf-04e1-42fa-909a-1ba84a49353f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="ECE-5160:-Fast-Robots">ECE 5160: Fast Robots<a class="anchor-link" href="#ECE-5160:-Fast-Robots">¶</a></h1>
+<p><a href="index.html">Return to Main Page</a></p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e6ec3db8-cc29-4709-9550-15f0a5b0e6a6">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8ce5b22e-f962-4148-ba3e-c6a91f437769">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center>
-<img alt="No description has been provided for this image" src="Media\IMG_0508.JPG" width="300"/>
-</center>
+<h1 id="Lab-12">Lab 12<a class="anchor-link" href="#Lab-12">¶</a></h1>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bd8a2861-6023-4489-9160-826a10ecad3e">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1d469b32-ac80-4ec0-a484-789a4f2f109a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Sabian Grier is pursuing a Master of Engineering degree in Electrical and Computer Engineering at Cornell University.</p>
+<h2 id="Objective">Objective<a class="anchor-link" href="#Objective">¶</a></h2>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b7437591-05e3-490d-8be3-7325b3a2ce72">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=18b74653-4967-41b4-af32-a3a9b833b1d3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Contents">Contents<a class="anchor-link" href="#Contents">¶</a></h2><ul>
-<li><a href="Lab_1A.html">Lab 1A</a></li>
-<li><a href="Lab_1B.html">Lab 1B</a></li>
-<li><a href="Lab_2.html">Lab 2</a></li>
-<li><a href="Lab_3.html">Lab 3</a></li>
-<li><a href="Lab_4.html">Lab 4</a></li>
-<li><a href="Lab_5.html">Lab 5</a></li>
-<li><a href="Lab_6.html">Lab 6</a></li>
-<li><a href="Lab_7.html">Lab 7</a></li>
-<li><a href="Lab_8.html">Lab 8</a></li>
-<li><a href="Lab_9.html">Lab 9</a></li>
-<li><a href="Lab_10.html">Lab 10</a></li>
-<li><a href="Lab_11.html">Lab 11</a></li>
-<li><a href="Lab_12.html">Lab 12</a></li>
-</ul>
+<p>In Lab 12, our task was to program our car to navigate the environment and reach a series of waypoints. This was an open-ended assignment that encouraged us to build upon the functionality developed throughout the first 11 labs. For my approach, I chose to implement feedback control. Due to the limited range of my time-of-flight (ToF) sensors, I was not confident in the car’s ability to perform reliable localization or path planning. As observed in Labs 9 and 11, both of my ToF sensors struggled to produce consistent distance measurements beyond approximately 2 meters. Given this constraint, my car’s ability to navigate between waypoints depended on the presence of nearby walls, which were necessary to provide the distance feedback required by my linear PID controller.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=31f86722-e3dc-4a81-8711-3adda412d7d8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Implementation">Implementation<a class="anchor-link" href="#Implementation">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bba9ee2c-7be0-4723-a0b6-a29cabb5e1cd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>To tackle this lab, I modified the code from Labs 5 and 6 to create dedicated functions for linear and angular PID control. As I noted in Lab 6, when I first begin collecting data from the DMP (Digital Motion Processor), the initial readings are extremely noisy for the first few seconds. Once the readings stabilize, a small steady-state error remains, which I use to zero the controller. Because I want this to be performed only once when I start the DMP, This is performed in my command prior to any calls to angular or linear PID functions.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ef11d1b1-439d-433e-9f44-a8a207fab3b5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="k">case</span> <span class="n">PID</span><span class="p">:</span>
+            <span class="nb">float</span> <span class="n">Kp</span><span class="p">,</span> <span class="n">Ki</span><span class="p">,</span> <span class="n">Kd</span><span class="p">,</span> <span class="n">PWM_MIN</span><span class="p">,</span> <span class="n">PWM_MAX</span><span class="p">,</span> <span class="n">Kp1</span><span class="p">,</span> <span class="n">Ki1</span><span class="p">,</span> <span class="n">Kd1</span><span class="p">,</span> <span class="n">PWM_MIN1</span><span class="p">,</span> <span class="n">PWM_MAX1</span><span class="p">,</span> <span class="n">PID_DISTANCE</span><span class="p">,</span> <span class="n">SCALE</span><span class="p">;</span>
+
+            <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">Kp</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+            <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">Ki</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+            <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">Kd</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+            <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">PWM_MIN</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+            <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">PWM_MAX</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+            <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">Kp1</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+            <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">Ki1</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+            <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">Kd1</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+            <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">PWM_MIN1</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+            <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">PWM_MAX1</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+            <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">PID_DISTANCE</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+            <span class="n">success</span> <span class="o">=</span> <span class="n">robot_cmd</span><span class="o">.</span><span class="n">get_next_value</span><span class="p">(</span><span class="n">SCALE</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">success</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+            <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">Kp</span><span class="p">);</span>
+            <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">Ki</span><span class="p">);</span>
+            <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">Kd</span><span class="p">);</span>
+            <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">PWM_MIN</span><span class="p">);</span>
+            <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">PWM_MAX</span><span class="p">);</span>
+
+            <span class="n">stabilizationStart</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
+            <span class="k">while</span> <span class="p">(</span><span class="n">millis</span><span class="p">()</span> <span class="o">-</span> <span class="n">stabilizationStart</span> <span class="o">&lt;</span> <span class="mi">3000</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">icm_20948_DMP_data_t</span> <span class="n">dummyData</span><span class="p">;</span>
+                <span class="n">myICM</span><span class="o">.</span><span class="n">readDMPdataFromFIFO</span><span class="p">(</span><span class="o">&amp;</span><span class="n">dummyData</span><span class="p">);</span>
+                <span class="n">delay</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+            <span class="p">}</span>
+
+            <span class="n">rotateToAngle</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">Kp1</span><span class="p">,</span> <span class="n">Ki1</span><span class="p">,</span> <span class="n">Kd1</span><span class="p">,</span> <span class="n">PWM_MIN1</span><span class="p">,</span> <span class="n">PWM_MAX1</span><span class="p">);</span>
+            <span class="n">rotateToAngle</span><span class="p">(</span><span class="mf">270.0</span><span class="p">,</span> <span class="n">Kp1</span><span class="p">,</span> <span class="n">Ki1</span><span class="p">,</span> <span class="n">Kd1</span><span class="p">,</span> <span class="n">PWM_MIN1</span><span class="p">,</span> <span class="n">PWM_MAX1</span><span class="p">);</span>
+            <span class="n">performDistancePID</span><span class="p">(</span><span class="mi">705</span><span class="p">,</span> <span class="n">Kp</span><span class="p">,</span> <span class="n">Ki</span><span class="p">,</span> <span class="n">Kd</span><span class="p">,</span> <span class="n">PWM_MIN</span><span class="p">,</span> <span class="n">PWM_MAX</span><span class="p">,</span> <span class="n">SCALE</span><span class="p">);</span>
+            <span class="n">rotateToAngle</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">Kp1</span><span class="p">,</span> <span class="n">Ki1</span><span class="p">,</span> <span class="n">Kd1</span><span class="p">,</span> <span class="n">PWM_MIN1</span><span class="p">,</span> <span class="n">PWM_MAX1</span><span class="p">);</span>
+            <span class="n">performDistancePID</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="n">Kp</span><span class="p">,</span> <span class="n">Ki</span><span class="p">,</span> <span class="n">Kd</span><span class="p">,</span> <span class="n">PWM_MIN</span><span class="p">,</span> <span class="n">PWM_MAX</span><span class="p">,</span> <span class="n">SCALE</span><span class="p">);</span>
+            <span class="n">rotateToAngle</span><span class="p">(</span><span class="mf">270.0</span><span class="p">,</span> <span class="n">Kp1</span><span class="p">,</span> <span class="n">Ki1</span><span class="p">,</span> <span class="n">Kd1</span><span class="p">,</span> <span class="n">PWM_MIN1</span><span class="p">,</span> <span class="n">PWM_MAX1</span><span class="p">);</span>
+            <span class="n">performDistancePID</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="n">Kp</span><span class="p">,</span> <span class="n">Ki</span><span class="p">,</span> <span class="n">Kd</span><span class="p">,</span> <span class="n">PWM_MIN</span><span class="p">,</span> <span class="n">PWM_MAX</span><span class="p">,</span> <span class="n">SCALE</span><span class="p">);</span>
+            <span class="n">rotateToAngle</span><span class="p">(</span><span class="mf">180.0</span><span class="p">,</span> <span class="n">Kp1</span><span class="p">,</span> <span class="n">Ki1</span><span class="p">,</span> <span class="n">Kd1</span><span class="p">,</span> <span class="n">PWM_MIN1</span><span class="p">,</span> <span class="n">PWM_MAX1</span><span class="p">);</span>
+            <span class="n">performDistancePID</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="n">Kp</span><span class="p">,</span> <span class="n">Ki</span><span class="p">,</span> <span class="n">Kd</span><span class="p">,</span> <span class="n">PWM_MIN</span><span class="p">,</span> <span class="n">PWM_MAX</span><span class="p">,</span> <span class="n">SCALE</span><span class="p">);</span>
+            <span class="n">rotateToAngle</span><span class="p">(</span><span class="mf">270.0</span><span class="p">,</span> <span class="n">Kp1</span><span class="p">,</span> <span class="n">Ki1</span><span class="p">,</span> <span class="n">Kd1</span><span class="p">,</span> <span class="n">PWM_MIN1</span><span class="p">,</span> <span class="n">PWM_MAX1</span><span class="p">);</span>
+            <span class="n">performDistancePID</span><span class="p">(</span><span class="mi">350</span><span class="p">,</span> <span class="n">Kp</span><span class="p">,</span> <span class="n">Ki</span><span class="p">,</span> <span class="n">Kd</span><span class="p">,</span> <span class="n">PWM_MIN</span><span class="p">,</span> <span class="n">PWM_MAX</span><span class="p">,</span> <span class="n">SCALE</span><span class="p">);</span>
+            <span class="n">rotateToAngle</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">Kp1</span><span class="p">,</span> <span class="n">Ki1</span><span class="p">,</span> <span class="n">Kd1</span><span class="p">,</span> <span class="n">PWM_MIN1</span><span class="p">,</span> <span class="n">PWM_MAX1</span><span class="p">);</span>
+            <span class="n">performDistancePID</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="n">Kp</span><span class="p">,</span> <span class="n">Ki</span><span class="p">,</span> <span class="n">Kd</span><span class="p">,</span> <span class="n">PWM_MIN</span><span class="p">,</span> <span class="n">PWM_MAX</span><span class="p">,</span> <span class="n">SCALE</span><span class="p">);</span>
+            <span class="n">rotateToAngle</span><span class="p">(</span><span class="mf">90.0</span><span class="p">,</span> <span class="n">Kp1</span><span class="p">,</span> <span class="n">Ki1</span><span class="p">,</span> <span class="n">Kd1</span><span class="p">,</span> <span class="n">PWM_MIN1</span><span class="p">,</span> <span class="n">PWM_MAX1</span><span class="p">);</span>
+            <span class="n">performDistancePID</span><span class="p">(</span><span class="mi">705</span><span class="p">,</span> <span class="n">Kp</span><span class="p">,</span> <span class="n">Ki</span><span class="p">,</span> <span class="n">Kd</span><span class="p">,</span> <span class="n">PWM_MIN</span><span class="p">,</span> <span class="n">PWM_MAX</span><span class="p">,</span> <span class="n">SCALE</span><span class="p">);</span>
+            <span class="n">rotateToAngle</span><span class="p">(</span><span class="mf">180.0</span><span class="p">,</span> <span class="n">Kp1</span><span class="p">,</span> <span class="n">Ki1</span><span class="p">,</span> <span class="n">Kd1</span><span class="p">,</span> <span class="n">PWM_MIN1</span><span class="p">,</span> <span class="n">PWM_MAX1</span><span class="p">);</span>
+            <span class="n">performDistancePID</span><span class="p">(</span><span class="mi">705</span><span class="p">,</span> <span class="n">Kp</span><span class="p">,</span> <span class="n">Ki</span><span class="p">,</span> <span class="n">Kd</span><span class="p">,</span> <span class="n">PWM_MIN</span><span class="p">,</span> <span class="n">PWM_MAX</span><span class="p">,</span> <span class="n">SCALE</span><span class="p">);</span>
+            <span class="k">break</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2ee465c1-6f54-4fc7-b5ab-c2f077311847">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>For angular PID, the car rotates until it settles within ±1 degree of the desired setpoint. Initially, at each new call to the angular PID function, I would restart DMP data collection and re-zero it. This approach introduced inconsistency. Although the angular PID controller itself performed well in isolation, the repeated re-zeroing caused small angular offsets to accumulate over time. As a result, the car's orientation became increasingly unreliable when navigating between later waypoints.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f4e531a5-1ed6-4f08-b863-452b6221f65a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>To resolve this, I modified the angular PID function so that it zeroes the DMP only once at the beginning of the run. This change ensures that the car's angular reference frame remains consistent throughout the entire navigation task. Although there may be a small error after each angular PID call it doesn't meaningfully affect the car’s performance or cause further compounding error. This led to much more reliable and predictable orientation behavior as the car moved through the environment. You can observe that the command begins with two consecutive calls to the rotateToAngle function. This is because the first call does not perform any PID control, it just zeros the angle.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9f019731-52e2-42da-9a8b-603c1e2515c3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">void</span> <span class="n">rotateToAngle</span><span class="p">(</span><span class="nb">float</span> <span class="n">targetDeg</span><span class="p">,</span> <span class="nb">float</span> <span class="n">Kp</span><span class="p">,</span> <span class="nb">float</span> <span class="n">Ki</span><span class="p">,</span> <span class="nb">float</span> <span class="n">Kd</span><span class="p">,</span><span class="nb">float</span> <span class="n">PWM_MIN</span><span class="p">,</span> <span class="nb">float</span> <span class="n">PWM_MAX</span><span class="p">){</span>
+    <span class="n">static</span> <span class="nb">bool</span>  <span class="n">yawOffsetSet</span>  <span class="o">=</span> <span class="n">false</span><span class="p">;</span>
+    <span class="n">static</span> <span class="n">double</span> <span class="n">yawOffsetDeg</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+
+    <span class="n">icm_20948_DMP_data_t</span> <span class="n">dmpData</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">yawOffsetSet</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">do</span> <span class="p">{</span>
+            <span class="n">myICM</span><span class="o">.</span><span class="n">readDMPdataFromFIFO</span><span class="p">(</span><span class="o">&amp;</span><span class="n">dmpData</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="err">!</span><span class="p">((</span><span class="n">myICM</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="n">ICM_20948_Stat_Ok</span> <span class="o">||</span>
+                    <span class="n">myICM</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="n">ICM_20948_Stat_FIFOMoreDataAvail</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+                   <span class="p">(</span><span class="n">dmpData</span><span class="o">.</span><span class="n">header</span> <span class="o">&amp;</span> <span class="n">DMP_header_bitmap_Quat9</span><span class="p">)));</span>
+
+        <span class="n">double</span> <span class="n">q1</span> <span class="o">=</span> <span class="n">double</span><span class="p">(</span><span class="n">dmpData</span><span class="o">.</span><span class="n">Quat9</span><span class="o">.</span><span class="n">Data</span><span class="o">.</span><span class="n">Q1</span><span class="p">)</span> <span class="o">/</span> <span class="mf">1073741824.0</span><span class="p">;</span>
+        <span class="n">double</span> <span class="n">q2</span> <span class="o">=</span> <span class="n">double</span><span class="p">(</span><span class="n">dmpData</span><span class="o">.</span><span class="n">Quat9</span><span class="o">.</span><span class="n">Data</span><span class="o">.</span><span class="n">Q2</span><span class="p">)</span> <span class="o">/</span> <span class="mf">1073741824.0</span><span class="p">;</span>
+        <span class="n">double</span> <span class="n">q3</span> <span class="o">=</span> <span class="n">double</span><span class="p">(</span><span class="n">dmpData</span><span class="o">.</span><span class="n">Quat9</span><span class="o">.</span><span class="n">Data</span><span class="o">.</span><span class="n">Q3</span><span class="p">)</span> <span class="o">/</span> <span class="mf">1073741824.0</span><span class="p">;</span>
+        <span class="n">double</span> <span class="n">q0</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="p">(</span><span class="n">q1</span><span class="o">*</span><span class="n">q1</span> <span class="o">+</span> <span class="n">q2</span><span class="o">*</span><span class="n">q2</span> <span class="o">+</span> <span class="n">q3</span><span class="o">*</span><span class="n">q3</span><span class="p">));</span>
+        <span class="n">double</span> <span class="n">yaw</span> <span class="o">=</span> <span class="n">atan2</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">q0</span><span class="o">*</span><span class="n">q3</span> <span class="o">+</span> <span class="n">q1</span><span class="o">*</span><span class="n">q2</span><span class="p">),</span> <span class="mi">1</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">q2</span><span class="o">*</span><span class="n">q2</span> <span class="o">+</span> <span class="n">q3</span><span class="o">*</span><span class="n">q3</span><span class="p">))</span> <span class="o">*</span> <span class="mf">180.0</span><span class="o">/</span><span class="n">M_PI</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">yaw</span> <span class="o">&gt;</span>  <span class="mi">180</span><span class="p">)</span> <span class="n">yaw</span> <span class="o">-=</span> <span class="mi">360</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">yaw</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">180</span><span class="p">)</span> <span class="n">yaw</span> <span class="o">+=</span> <span class="mi">360</span><span class="p">;</span>
+
+        <span class="n">yawOffsetDeg</span> <span class="o">=</span> <span class="n">yaw</span><span class="p">;</span>
+        <span class="n">yawOffsetSet</span> <span class="o">=</span> <span class="n">true</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">unsigned</span> <span class="n">long</span> <span class="n">last_time</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
+    <span class="n">double</span> <span class="n">integral</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">double</span> <span class="n">last_error</span>  <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">double</span> <span class="n">error</span>       <span class="o">=</span> <span class="mf">1e6</span><span class="p">;</span>
+
+    <span class="k">while</span> <span class="p">(</span><span class="n">fabs</span><span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mf">1.0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">myICM</span><span class="o">.</span><span class="n">readDMPdataFromFIFO</span><span class="p">(</span><span class="o">&amp;</span><span class="n">dmpData</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">((</span><span class="n">myICM</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="n">ICM_20948_Stat_Ok</span><span class="p">)</span> <span class="o">||</span>
+            <span class="p">(</span><span class="n">myICM</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="n">ICM_20948_Stat_FIFOMoreDataAvail</span><span class="p">))</span> <span class="p">{</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">dmpData</span><span class="o">.</span><span class="n">header</span> <span class="o">&amp;</span> <span class="n">DMP_header_bitmap_Quat9</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">double</span> <span class="n">q1</span> <span class="o">=</span> <span class="n">double</span><span class="p">(</span><span class="n">dmpData</span><span class="o">.</span><span class="n">Quat9</span><span class="o">.</span><span class="n">Data</span><span class="o">.</span><span class="n">Q1</span><span class="p">)</span> <span class="o">/</span> <span class="mf">1073741824.0</span><span class="p">;</span>
+                <span class="n">double</span> <span class="n">q2</span> <span class="o">=</span> <span class="n">double</span><span class="p">(</span><span class="n">dmpData</span><span class="o">.</span><span class="n">Quat9</span><span class="o">.</span><span class="n">Data</span><span class="o">.</span><span class="n">Q2</span><span class="p">)</span> <span class="o">/</span> <span class="mf">1073741824.0</span><span class="p">;</span>
+                <span class="n">double</span> <span class="n">q3</span> <span class="o">=</span> <span class="n">double</span><span class="p">(</span><span class="n">dmpData</span><span class="o">.</span><span class="n">Quat9</span><span class="o">.</span><span class="n">Data</span><span class="o">.</span><span class="n">Q3</span><span class="p">)</span> <span class="o">/</span> <span class="mf">1073741824.0</span><span class="p">;</span>
+                <span class="n">double</span> <span class="n">q0</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="p">(</span><span class="n">q1</span><span class="o">*</span><span class="n">q1</span> <span class="o">+</span> <span class="n">q2</span><span class="o">*</span><span class="n">q2</span> <span class="o">+</span> <span class="n">q3</span><span class="o">*</span><span class="n">q3</span><span class="p">));</span>
+                <span class="n">double</span> <span class="n">yaw</span> <span class="o">=</span> <span class="n">atan2</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">q0</span><span class="o">*</span><span class="n">q3</span> <span class="o">+</span> <span class="n">q1</span><span class="o">*</span><span class="n">q2</span><span class="p">),</span> <span class="mi">1</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">q2</span><span class="o">*</span><span class="n">q2</span> <span class="o">+</span> <span class="n">q3</span><span class="o">*</span><span class="n">q3</span><span class="p">))</span> <span class="o">*</span> <span class="mf">180.0</span><span class="o">/</span><span class="n">M_PI</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">yaw</span> <span class="o">&gt;</span>  <span class="mi">180</span><span class="p">)</span> <span class="n">yaw</span> <span class="o">-=</span> <span class="mi">360</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">yaw</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">180</span><span class="p">)</span> <span class="n">yaw</span> <span class="o">+=</span> <span class="mi">360</span><span class="p">;</span>
+
+                <span class="n">double</span> <span class="n">yawRel</span> <span class="o">=</span> <span class="n">yaw</span> <span class="o">-</span> <span class="n">yawOffsetDeg</span><span class="p">;</span>
+                <span class="k">while</span> <span class="p">(</span><span class="n">yawRel</span> <span class="o">&gt;</span>  <span class="mi">180</span><span class="p">)</span> <span class="n">yawRel</span> <span class="o">-=</span> <span class="mi">360</span><span class="p">;</span>
+                <span class="k">while</span> <span class="p">(</span><span class="n">yawRel</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">180</span><span class="p">)</span> <span class="n">yawRel</span> <span class="o">+=</span> <span class="mi">360</span><span class="p">;</span>
+
+                <span class="n">error</span> <span class="o">=</span> <span class="n">targetDeg</span> <span class="o">-</span> <span class="n">yawRel</span><span class="p">;</span>
+                <span class="k">while</span> <span class="p">(</span><span class="n">error</span> <span class="o">&gt;</span>  <span class="mi">180</span><span class="p">)</span> <span class="n">error</span> <span class="o">-=</span> <span class="mi">360</span><span class="p">;</span>
+                <span class="k">while</span> <span class="p">(</span><span class="n">error</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">180</span><span class="p">)</span> <span class="n">error</span> <span class="o">+=</span> <span class="mi">360</span><span class="p">;</span>
+                <span class="n">Serial</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">"yawRel: "</span><span class="p">);</span>
+                <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">yawRel</span><span class="p">);</span>
+                <span class="n">Serial</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">"targetDeg: "</span><span class="p">);</span>
+                <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">targetDeg</span><span class="p">);</span>
+                <span class="n">Serial</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">"error: "</span><span class="p">);</span>
+                <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
+
+                <span class="n">unsigned</span> <span class="n">long</span> <span class="n">now</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
+                <span class="n">double</span> <span class="n">dt</span> <span class="o">=</span> <span class="p">(</span><span class="n">now</span> <span class="o">-</span> <span class="n">last_time</span><span class="p">)</span> <span class="o">/</span> <span class="mf">1000.0</span><span class="p">;</span>
+                <span class="n">last_time</span> <span class="o">=</span> <span class="n">now</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">dt</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="n">dt</span> <span class="o">=</span> <span class="mf">0.001</span><span class="p">;</span>
+
+                <span class="n">integral</span>   <span class="o">+=</span> <span class="n">error</span> <span class="o">*</span> <span class="n">dt</span><span class="p">;</span>
+                <span class="n">double</span> <span class="n">derivative</span> <span class="o">=</span> <span class="p">(</span><span class="n">error</span> <span class="o">-</span> <span class="n">last_error</span><span class="p">)</span> <span class="o">/</span> <span class="n">dt</span><span class="p">;</span>
+                <span class="n">last_error</span> <span class="o">=</span> <span class="n">error</span><span class="p">;</span>
+
+                <span class="n">double</span> <span class="n">pid_output</span> <span class="o">=</span> <span class="n">Kp</span> <span class="o">*</span> <span class="n">error</span> <span class="o">+</span> <span class="n">Ki</span> <span class="o">*</span> <span class="n">integral</span> <span class="o">+</span> <span class="n">Kd</span> <span class="o">*</span> <span class="n">derivative</span><span class="p">;</span>
+                <span class="n">double</span> <span class="n">pid_pwm</span> <span class="o">=</span> <span class="n">constrain</span><span class="p">(</span><span class="n">PWM_MIN</span> <span class="o">+</span> <span class="n">pid_output</span><span class="p">,</span> <span class="n">PWM_MIN</span><span class="p">,</span> <span class="n">PWM_MAX</span><span class="p">);</span>
+                <span class="nb">int</span> <span class="n">pwmValue</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">pid_pwm</span><span class="p">);</span>
+
+                <span class="k">if</span> <span class="p">(</span><span class="n">pid_output</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+                    <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+                    <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN2</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="mf">1.25</span> <span class="o">*</span> <span class="n">pwmValue</span><span class="p">));</span>
+                    <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN2</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="mf">1.35</span> <span class="o">*</span> <span class="n">pwmValue</span><span class="p">));</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN2</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+                    <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN2</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+                    <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN1</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="mf">1.2</span>  <span class="o">*</span> <span class="n">pwmValue</span><span class="p">));</span>
+                    <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN1</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="mf">1.25</span> <span class="o">*</span> <span class="n">pwmValue</span><span class="p">));</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN1</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
+    <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN2</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
+    <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN1</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
+    <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN2</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=45e6f8b0-0b2c-4102-9485-7695b216ec5e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>As for linear PID, the controller performed well in Lab 5 and required minimal modification. In the current implementation, my linear PID function continues to collect DMP data, even though it does not use it directly. This design choice is intentional, by continuously reading from the DMP during linear motion, I prevent its FIFO buffer from overflowing, which would otherwise make the data unusable when angular PID is needed. With both PID functions working reliably, I developed a higher-level command above that takes in PID parameters and coordinates a sequence of linear and angular PID calls. This structure enables the car to execute a series of controlled movements through the environment and reach its waypoints effectively.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=46dc9e8f-7d87-4fb2-858b-20e105ec4ce1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">void</span> <span class="n">performDistancePID</span><span class="p">(</span><span class="nb">float</span> <span class="n">targetDist</span><span class="p">,</span> <span class="nb">float</span> <span class="n">Kp</span><span class="p">,</span> <span class="nb">float</span> <span class="n">Ki</span><span class="p">,</span> <span class="nb">float</span> <span class="n">Kd</span><span class="p">,</span> <span class="nb">float</span> <span class="n">PWM_MIN</span><span class="p">,</span> <span class="nb">float</span> <span class="n">PWM_MAX</span><span class="p">,</span> <span class="nb">float</span> <span class="n">scale</span><span class="p">){</span>
+    <span class="n">unsigned</span> <span class="n">long</span> <span class="n">last_time</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
+    <span class="n">double</span>       <span class="n">integral</span>  <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">double</span>       <span class="n">last_error</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="nb">int</span>          <span class="n">index</span>     <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">double</span>       <span class="n">error</span>     <span class="o">=</span> <span class="mf">1e6</span><span class="p">;</span>
+
+    <span class="n">sensor2</span><span class="o">.</span><span class="n">startRanging</span><span class="p">();</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">fabs</span><span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mf">20.0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">{</span>
+            <span class="n">icm_20948_DMP_data_t</span> <span class="n">dummy</span><span class="p">;</span>
+            <span class="n">myICM</span><span class="o">.</span><span class="n">readDMPdataFromFIFO</span><span class="p">(</span><span class="o">&amp;</span><span class="n">dummy</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">sensor2</span><span class="o">.</span><span class="n">checkForDataReady</span><span class="p">())</span> <span class="p">{</span>
+            <span class="nb">float</span> <span class="n">distance</span> <span class="o">=</span> <span class="n">sensor2</span><span class="o">.</span><span class="n">getDistance</span><span class="p">();</span>
+            <span class="n">sensor2</span><span class="o">.</span><span class="n">clearInterrupt</span><span class="p">();</span>
+
+            <span class="n">unsigned</span> <span class="n">long</span> <span class="n">now</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
+            <span class="n">double</span> <span class="n">dt</span> <span class="o">=</span> <span class="p">(</span><span class="n">now</span> <span class="o">-</span> <span class="n">last_time</span><span class="p">)</span> <span class="o">/</span> <span class="mf">1000.0</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">dt</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="n">dt</span> <span class="o">=</span> <span class="mf">0.001</span><span class="p">;</span>
+            <span class="n">last_time</span> <span class="o">=</span> <span class="n">now</span><span class="p">;</span>
+
+            <span class="n">error</span> <span class="o">=</span> <span class="n">distance</span> <span class="o">-</span> <span class="n">targetDist</span><span class="p">;</span>  <span class="o">//</span> <span class="n">STOP_DISTANCE</span> <span class="o">==</span> <span class="mi">340</span>
+
+            <span class="n">integral</span>   <span class="o">+=</span> <span class="n">error</span> <span class="o">*</span> <span class="n">dt</span><span class="p">;</span>
+            <span class="n">double</span> <span class="n">derivative</span> <span class="o">=</span> <span class="p">(</span><span class="n">error</span> <span class="o">-</span> <span class="n">last_error</span><span class="p">)</span> <span class="o">/</span> <span class="n">dt</span><span class="p">;</span>
+            <span class="n">last_error</span> <span class="o">=</span> <span class="n">error</span><span class="p">;</span>
+
+            <span class="n">double</span> <span class="n">pid_out</span> <span class="o">=</span> <span class="n">Kp</span> <span class="o">*</span> <span class="n">error</span> <span class="o">+</span> <span class="n">Ki</span> <span class="o">*</span> <span class="n">integral</span> <span class="o">+</span> <span class="n">Kd</span> <span class="o">*</span> <span class="n">derivative</span><span class="p">;</span>
+            <span class="n">double</span> <span class="n">pid_pwm</span> <span class="o">=</span> <span class="n">constrain</span><span class="p">(</span><span class="n">PWM_MIN</span> <span class="o">+</span> <span class="n">pid_out</span><span class="p">,</span> <span class="n">PWM_MIN</span><span class="p">,</span> <span class="n">PWM_MAX</span><span class="p">);</span>
+            <span class="nb">int</span>    <span class="n">pwmValue</span> <span class="o">=</span> <span class="p">(</span><span class="nb">int</span><span class="p">)</span><span class="n">pid_pwm</span><span class="p">;</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">pid_out</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN2</span><span class="p">,</span> <span class="n">pwmValue</span><span class="p">);</span>
+                <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN1</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">)(</span><span class="n">scale</span> <span class="o">*</span> <span class="n">pwmValue</span><span class="p">));</span>
+                <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+                <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN2</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN1</span><span class="p">,</span> <span class="n">pwmValue</span><span class="p">);</span>
+                <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN2</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">)(</span><span class="n">scale</span> <span class="o">*</span> <span class="n">pwmValue</span><span class="p">));</span>
+                <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN2</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+                <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+            <span class="p">}</span>
+
+            <span class="n">index</span><span class="o">++</span><span class="p">;</span>
+
+            <span class="n">sensor2</span><span class="o">.</span><span class="n">startRanging</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="n">sensor2</span><span class="o">.</span><span class="n">stopRanging</span><span class="p">();</span>
+
+    <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN1</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
+    <span class="n">analogWrite</span><span class="p">(</span><span class="n">AIN2</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
+    <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN1</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
+    <span class="n">analogWrite</span><span class="p">(</span><span class="n">BIN2</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6feea30a-b5e7-4c03-bd17-c6641a925325">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>I modified my PID function to handle the navigation, and it was called in Python using the following code.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0c41dba2-c329-4690-9209-f1239505c124">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">ble</span><span class="o">.</span><span class="n">send_command</span><span class="p">(</span><span class="n">CMD</span><span class="o">.</span><span class="n">PID</span><span class="p">,</span> <span class="s2">"0.003|0.0000001|0.0007|35|85|0.01|0.00005|0.0007|100|200|400|1.5"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4c48c2b2-3f22-4df9-8f86-5992cec6fc61">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Given that I could reliably depend only on my linear and angular PID controllers, I aimed to develop a navigation strategy that allowed me to hit as many waypoints as possible using just those control modes.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4a804eb0-ba0e-4a58-a954-041a37da7194">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The most optimized path to the first waypoint required diagonal movement directly from the start.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b5842b82-ffca-4352-8cfd-78bc53c17636">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Path" src="Media/Lab_12_Images/1.jpeg" width="500"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6d1b5894-82c4-4ce7-b1db-31221aae5af2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>However, due to the limited range of my ToF sensors, I was unable to use linear PID to approach the first waypoint. Although angular PID allowed me to rotate accurately toward the target, the opposite wall was out of sensing range. As a result, the system could not detect when the waypoint, marked in orange, was reached using linear PID.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bd25722a-ebbd-4b7e-9816-2202417d0b89">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Path" src="Media/Lab_12_Images/2.jpeg" width="500"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9d8079c4-94f6-4aa5-952c-e47c4d1b9200">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>An alternative was to use open-loop forward motion, estimating the required duration to reach the waypoint. However, inconsistencies caused by battery depletion and general variability in the vehicle’s performance made this approach unreliable. The error introduced from these inconsistencies would propagate throughout the remainder of the path, leading to failed runs. Furthermore, because the vehicle lacked robust localization, I couldn’t correct its position after the open-loop command.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=641b02f1-cd53-44b0-9443-f88de2478cd7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>As a result, I planned a new route that avoided diagonal movement altogether.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=330269eb-29f8-4537-9ce9-5e2e8aa7c30b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Path" src="Media/Lab_12_Images/3.jpeg" width="500"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=02c5f00c-dd37-41e6-aaf2-92dcbea7cd54">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Even along this new path, I encountered similar issues. The wall opposite to the orange waypoint was still out of ToF range, making linear PID unusable. As seen in previous labs, when the wall was not detected, the sensor would return arbitrary values. In this case, the car received values below the setpoint and falsely believed it had overshot, prompting it to reverse.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7c4bd505-daab-4efa-9813-62c4fe043d9c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Path" src="Media/Lab_12_Images/4.jpeg" width="500"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c86be32a-3038-4b49-9ad0-50752c7c7f17">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>To resolve this, I adjusted the route so that walls remained within sensing range throughout the path. This new path skipped two waypoints but maintained reliable control performance.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b49cd8ac-b61c-4e29-b376-64c6dcd58317">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Path" src="Media/Lab_12_Images/5.jpeg" width="500"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=17992fde-d01b-42f3-8501-22f56390f69b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>With this modified path, I was able to achieve consistent and successful runs, as shown in this video.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=319c5ca0-b17b-45f1-a03f-28c9a77b1e42">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><a href="https://www.youtube.com/shorts/Ep0jKnNrxgE"><img alt="Watch the video" src="https://img.youtube.com/vi/Ep0jKnNrxgE/0.jpg"/></a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bf047ea5-3148-4caa-a265-1805ffd987c2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Still, I wanted to demonstrate full waypoint traversal despite ToF limitations. With a small modification to the world layout, I created a feasible path that passed through all waypoints. The effectiveness of this route is demonstrated in the following two videos.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4f83f826-e807-47e6-80eb-515c3f353182">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Path" src="Media/Lab_12_Images/6.jpeg" width="500"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=36786922-b537-4a08-9418-309bb3a08fc9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="Path" src="Media/Lab_12_Images/7.jpeg" width="500"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7d506493-dd81-4179-aed4-3fd40d49f8b6">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><a href="https://www.youtube.com/shorts/ffdEuc8KeQo"><img alt="Watch the video" src="https://img.youtube.com/vi/ffdEuc8KeQo/0.jpg"/></a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3221a236-6e09-44c7-b4ac-ba9e286076d7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><a href="https://www.youtube.com/shorts/C3EJ0lvFUI0"><img alt="Watch the video" src="https://img.youtube.com/vi/C3EJ0lvFUI0/0.jpg"/></a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9f6b8909-90ed-4201-b98f-b8323b285cbb">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Summary">Summary<a class="anchor-link" href="#Summary">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bda5a18e-0f19-4b99-ba1d-94b15c80e9b3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>I deliberately chose not to move along diagonal paths. This decision relates to the limited range of my ToF sensors. If the car were to move diagonally, the opposite wall, used as a reference for linear PID control, would fall outside the sensor's effective range, leading to unpredictable behavior. This limitation also caused issues when trying to reach certain waypoints when not moving on diagonals. In one case, the car attempted to perform distance-based PID on a wall that was not within sensing range. As a result, it incorrectly would move in reverse.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cf64e3e3-240f-4133-a29b-7deebf3fc33b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>To address this, I experimented with two approaches:</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=295c67ea-22a4-4172-801c-cb78e579f528">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Route Adjustment:</strong> In one attempt, I intentionally skipped the second and third waypoints to take a route that ensured a wall was always within sensing distance. This allowed my linear PID controller to function reliably, and the car navigated smoothly through the modified path.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7ed0a106-1ece-4d9c-b0d7-264aab48d8b2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Environmental Modification:</strong> In a second approach, I placed a block in a strategic location to bring a wall within range. This allowed the car to use the new surface for PID control and successfully navigate through all the waypoints, including the previously problematic ones.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a076145c-9f81-4458-8800-7b88c871802e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Refrences">Refrences<a class="anchor-link" href="#Refrences">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=11c54a5d-bdbb-46eb-a3ad-31cecdb9b34e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>I completed Lab 12 independently. I did not work with or consult other students in developing my approach or implementation. I did not reference previous submissions. I used ChatGPT to assist with Arduino code generation, as well as for text editing and revision.</p>
 </div>
 </div>
 </div>
